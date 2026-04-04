@@ -15,6 +15,7 @@ interface StatsContextType {
   stats: Stats;
   addPoints: (stat: StatName, points: number) => void;
   getLevelInfo: (stat: StatName) => { level: number; name: string; min: number; nextMin?: number };
+  resetStats: () => void;
 }
 
 const StatsContext = createContext<StatsContextType | undefined>(undefined);
@@ -48,6 +49,16 @@ export const StatsProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setStats(prev => ({ ...prev, [stat]: prev[stat] + points }));
   };
 
+  const resetStats = () => {
+    setStats({
+      connaissance: 0,
+      courage: 0,
+      maîtrise: 0,
+      gentillesse: 0,
+      charme: 0
+    });
+  };
+
   const getLevelInfo = (stat: StatName) => {
     const levels = (statsLevels as any)[stat];
     const currentPoints = stats[stat];
@@ -73,7 +84,7 @@ export const StatsProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   return (
-    <StatsContext.Provider value={{ stats, addPoints, getLevelInfo }}>
+    <StatsContext.Provider value={{ stats, addPoints, getLevelInfo, resetStats }}>
       {children}
     </StatsContext.Provider>
   );

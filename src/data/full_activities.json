@@ -1,32 +1,36 @@
 {
   "livres": [
+    { "id": "arsene_lupin", "name": "Arsène Lupin, gentleman cambrioleur", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Bibliothèque" },
     { "id": "grand_voleur", "name": "Le Grand Voleur", "chapters": 2, "stat": "connaissance", "points": 5, "location": "Bibliothèque" },
     { "id": "legende_pirate", "name": "Légende de pirate", "chapters": 2, "stat": "courage", "points": 5, "location": "Bibliothèque" },
-    { "id": "zorro_hors_la_loi", "name": "Zorro le hors-la-loi", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Bibliothèque" },
-    { "id": "danseuse_seduisante", "name": "La Danseuse séduisante", "chapters": 2, "stat": "charme", "points": 5, "location": "Bibliothèque" },
-    { "id": "galant_coquin", "name": "Le Galant coquin", "chapters": 2, "stat": "courage", "points": 5, "location": "Bibliothèque" },
-    { "id": "papesse_illusoire", "name": "La Papesse illusoire", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Bibliothèque" },
-    { "id": "appel_cthulhu", "name": "L'Appel de Cthulhu", "chapters": 2, "stat": "courage", "points": 5, "location": "Bibliothèque" },
-    { "id": "femme_ombre", "name": "La Femme dans l'ombre", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Bibliothèque" },
-    { "id": "vetu_cendres", "name": "Vêtu de cendres", "chapters": 2, "stat": "charme", "points": 5, "location": "Bibliothèque" },
-    { "id": "heros_arc", "name": "Le Héros à l'arc", "chapters": 2, "stat": "courage", "points": 5, "location": "Bibliothèque" },
-    { "id": "ranger_coeur", "name": "Ranger son cœur", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Shibuya" },
+    { "id": "zorro_hors_la_loi", "name": "Zorro le hors-la-loi", "chapters": 2, "stat": "charme", "points": 5, "location": "Bibliothèque" },
+    { "id": "illustre_goemon", "name": "L'Illustre Goemon", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Bibliothèque" },
+    { "id": "papesse_ecarlate", "name": "La Papesse écarlate", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Bibliothèque" },
+    { "id": "medjed", "name": "Menace Medjed", "chapters": 2, "stat": "connaissance", "points": 5, "location": "Shibuya" },
+    { "id": "ranger_coeur", "name": "Ranger son Cœur", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Shibuya" },
     { "id": "buchiko", "name": "L'histoire de Buchiko", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Shibuya" },
-    { "id": "medjed", "name": "La menace Medjed", "chapters": 2, "stat": "connaissance", "points": 5, "location": "Shibuya" },
-    { "id": "paroles_sages", "name": "Paroles de sages", "chapters": 2, "stat": "connaissance", "points": 5, "location": "Shibuya" },
-    { "id": "rencontres_spectrales", "name": "Rencontres spectrales", "chapters": 2, "stat": "courage", "points": 5, "location": "Shibuya" },
-    { "id": "maitriser_jeu", "name": "Maîtriser le jeu", "chapters": 2, "stat": "charme", "points": 5, "location": "Shibuya" },
-    { "id": "art_charme", "name": "L'art du charme", "chapters": 2, "stat": "charme", "points": 5, "location": "Shibuya" },
-    { "id": "informatique", "name": "L'informatique pour tous", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Shibuya" }
+    { "id": "voleur_fantomes", "name": "Voleur de fantômes", "chapters": 2, "stat": "courage", "points": 5, "location": "Shibuya" },
+    { "id": "flowerpedia", "name": "Flowerpedia", "chapters": 2, "stat": "gentillesse", "points": 5, "location": "Shinjuku" },
+    { "id": "science_batting", "name": "Science du Batting", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Shinjuku" },
+    { "id": "maitrise_cinema", "name": "Maîtrise du Cinéma", "chapters": 2, "stat": "connaissance", "points": 5, "location": "Shinjuku" },
+    { "id": "art_du_jeu", "name": "L'Art du Jeu", "chapters": 2, "stat": "maîtrise", "points": 5, "location": "Shinjuku" },
+    { "id": "lecture_rapide", "name": "Lecture Rapide", "chapters": 1, "stat": "special", "points": 0, "location": "Jinbocho" }
+  ],
+  "dvds": [
+    { "id": "x_folders", "name": "X-Folders", "stat": "courage", "points": 3, "location": "Shibuya Rental" },
+    { "id": "bubbly_hills", "name": "Bubbly Hills", "stat": "charme", "points": 3, "location": "Shibuya Rental" },
+    { "id": "wraith", "name": "Wraith", "stat": "gentillesse", "points": 3, "location": "Shibuya Rental" },
+    { "id": "parrain_drogue", "name": "Parrain de la drogue", "stat": "connaissance", "points": 3, "location": "Shibuya Rental" },
+    { "id": "running_dead", "name": "Running Dead", "stat": "courage", "points": 3, "location": "Shibuya Rental" },
+    { "id": "vampire_nuit", "name": "Vampire de la nuit", "stat": "charme", "points": 3, "location": "Shibuya Rental" }
   ],
   "activites": [
+    { "id": "depanneur_777", "name": "Dépanneur (777)", "stat": "charme", "points": 2, "location": "Shibuya" },
+    { "id": "fleuriste_rafflesia", "name": "Fleuriste Rafflesia", "stat": "gentillesse", "points": 2, "location": "Shibuya", "bonus": { "type": "day", "days": ["Mercredi", "Samedi"], "points": 1 } },
+    { "id": "bols_de_boeuf", "name": "Bols de bœuf (Ore no Beko)", "stat": "maîtrise", "points": 2, "location": "Shibuya" },
+    { "id": "bar_crossroads", "name": "Bar Crossroads", "stat": "variable", "points": 2, "location": "Shinjuku" },
     { "id": "etudier_biblio", "name": "Étudier à la bibliothèque", "stat": "connaissance", "points": 2, "bonus": { "type": "rain", "points": 1 } },
     { "id": "etudier_diner", "name": "Étudier au Diner", "stat": "connaissance", "points": 2, "bonus": { "type": "rain", "points": 1 } },
-    { "id": "bains_publics", "name": "Bains Publics", "stat": "charme", "points": 2, "bonus": { "type": "mon_thu", "points": 1 } },
-    { "id": "burger_challenge", "name": "Big Bang Burger Challenge", "stat": "courage", "points": 2 },
-    { "id": "nettoyer_leblanc", "name": "Nettoyer le Leblanc", "stat": "gentillesse", "points": 2 },
-    { "id": "travailler_fleuriste", "name": "Fleuriste Rafflesia", "stat": "gentillesse", "points": 2 },
-    { "id": "travailler_beef_bowl", "name": "Beef Bowl Ore no Maru", "stat": "maîtrise", "points": 2 },
-    { "id": "travailler_convenience", "name": "Supérette 777", "stat": "charme", "points": 2 }
+    { "id": "bains_publics", "name": "Bains Publics", "stat": "charme", "points": 2, "bonus": { "type": "mon_thu", "points": 1 } }
   ]
 }

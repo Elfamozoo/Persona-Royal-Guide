@@ -2,22 +2,31 @@ import React, { useState } from 'react';
 import { useCalendar } from '../context/CalendarContext';
 import { useStats } from '../context/StatsContext';
 import data from '../data/full_activities.json';
-import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain } from 'lucide-react';
+import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain, Tv } from 'lucide-react';
 
 const ActivityLogger: React.FC = () => {
   const { currentDate, logActivity, nextDay, jumpToDate } = useCalendar();
   const { addPoints } = useStats();
   const [isRainy, setIsRainy] = useState(false);
   const [timeSlot, setTimeSlot] = useState<'Matin' | 'Après-midi' | 'Soir'>('Après-midi');
-  const [filter, setFilter] = useState<'all' | 'books' | 'activities'>('all');
+  const [filter, setFilter] = useState<'all' | 'books' | 'activities' | 'dvds'>('all');
 
   const handleLog = (activity: any) => {
     let points = activity.points;
+    const currentDayName = currentDate.toLocaleDateString('fr-FR', { weekday: 'long' });
+    
+    // Bonus logic
     if (isRainy && activity.bonus?.type === 'rain') {
       points += activity.bonus.points;
     }
+    if (activity.bonus?.type === 'day' && activity.bonus.days.includes(currentDayName.charAt(0).toUpperCase() + currentDayName.slice(1))) {
+      points += activity.bonus.points;
+    }
 
-    addPoints(activity.stat as any, points);
+    if (activity.stat !== 'special' && activity.stat !== 'variable') {
+      addPoints(activity.stat as any, points);
+    }
+
     logActivity({
       timeSlot,
       activityId: activity.id,
@@ -59,10 +68,11 @@ const ActivityLogger: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex gap-4">
-        <button onClick={() => setFilter('all')} className={`p5-button ${filter === 'all' ? 'opacity-100' : 'opacity-50'}`}>Tout</button>
-        <button onClick={() => setFilter('books')} className={`p5-button ${filter === 'books' ? 'opacity-100' : 'opacity-50'}`}>Livres</button>
-        <button onClick={() => setFilter('activities')} className={`p5-button ${filter === 'activities' ? 'opacity-100' : 'opacity-50'}`}>Activités</button>
+      <div className="flex flex-wrap gap-2 md:gap-4">
+        <button onClick={() => setFilter('all')} className={`p5-button text-xs md:text-sm ${filter === 'all' ? 'opacity-100' : 'opacity-50'}`}>Tout</button>
+        <button onClick={() => setFilter('activities')} className={`p5-button text-xs md:text-sm ${filter === 'activities' ? 'opacity-100' : 'opacity-50'}`}>Activités</button>
+        <button onClick={() => setFilter('books')} className={`p5-button text-xs md:text-sm ${filter === 'books' ? 'opacity-100' : 'opacity-50'}`}>Livres</button>
+        <button onClick={() => setFilter('dvds')} className={`p5-button text-xs md:text-sm ${filter === 'dvds' ? 'opacity-100' : 'opacity-50'}`}>DVDs</button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -71,7 +81,7 @@ const ActivityLogger: React.FC = () => {
             <div className="flex justify-between items-start">
               <div>
                 <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{act.name}</h4>
-                <p className="text-xs text-p5-white/60 uppercase">{act.stat}</p>
+                <p className="text-xs text-p5-white/60 uppercase">{act.location} • {act.stat}</p>
               </div>
               <Briefcase size={20} className="text-p5-red" />
             </div>
@@ -92,6 +102,19 @@ const ActivityLogger: React.FC = () => {
               <span className="text-p5-red font-bold">+{book.points} pts</span>
               <span className="text-[10px] bg-p5-white text-p5-black px-1 font-black">{book.chapters} CHAP</span>
             </div>
+          </button>
+        ))}
+
+        {(filter === 'all' || filter === 'dvds') && data.dvds.map(dvd => (
+          <button key={dvd.id} onClick={() => handleLog(dvd)} className="p5-card text-left group">
+            <div className="flex justify-between items-start">
+              <div>
+                <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{dvd.name}</h4>
+                <p className="text-xs text-p5-white/60 uppercase">{dvd.location} • {dvd.stat}</p>
+              </div>
+              <Tv size={20} className="text-p5-red" />
+            </div>
+            <div className="mt-2 text-p5-red font-bold">+{dvd.points} pts</div>
           </button>
         ))}
       </div>

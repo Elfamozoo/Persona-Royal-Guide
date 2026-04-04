@@ -1,6 +1,12 @@
 import React from 'react';
+import { useStats } from '../context/StatsContext';
+import { useCalendar } from '../context/CalendarContext';
+import { Trash2, Download, Upload } from 'lucide-react';
 
 const BackupManager: React.FC = () => {
+  const { resetStats } = useStats();
+  const { resetCalendar } = useCalendar();
+
   const exportData = () => {
     const data = {
       p5r_stats: localStorage.getItem('p5r_stats'),
@@ -40,49 +46,48 @@ const BackupManager: React.FC = () => {
     reader.readAsText(file);
   };
 
+  const handleReset = () => {
+    if (window.confirm('Êtes-vous sûr de vouloir tout effacer ? Cette action est irréversible.')) {
+      resetStats();
+      resetCalendar();
+      localStorage.clear();
+      alert('Toutes les données ont été effacées.');
+      window.location.reload();
+    }
+  };
+
   return (
-    <div className="backup-manager" style={{ marginTop: '30px', padding: '20px', border: '2px dashed var(--p5-gray)' }}>
-      <h3 style={{ margin: '0 0 15px 0', textTransform: 'uppercase' }}>Gestion des Sauvegardes</h3>
-      <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+    <div className="p5-card border-white/10 space-y-6">
+      <h3 className="font-black italic uppercase text-lg text-p5-red flex items-center gap-2">
+        <Download size={20} /> Gestion des Données
+      </h3>
+      
+      <div className="grid grid-cols-1 gap-3">
         <button 
           onClick={exportData}
-          style={{
-            padding: '10px 20px',
-            background: 'var(--p5-red)',
-            color: 'var(--p5-white)',
-            border: 'none',
-            cursor: 'pointer',
-            fontWeight: 'bold'
-          }}
+          className="w-full flex items-center justify-between p-3 bg-p5-gray/40 hover:bg-p5-white hover:text-p5-black transition-all font-black italic uppercase text-xs"
         >
-          Exporter ma progression
+          <span>Exporter la progression</span>
+          <Download size={16} />
         </button>
 
-        <div style={{ position: 'relative' }}>
-          <label 
-            htmlFor="import-file"
-            style={{
-              padding: '10px 20px',
-              background: 'var(--p5-white)',
-              color: 'var(--p5-black)',
-              border: 'none',
-              cursor: 'pointer',
-              fontWeight: 'bold'
-            }}
-          >
-            Importer une sauvegarde
-          </label>
-          <input 
-            id="import-file" 
-            type="file" 
-            accept=".json" 
-            onChange={importData} 
-            style={{ display: 'none' }}
-          />
-        </div>
+        <label className="w-full flex items-center justify-between p-3 bg-p5-gray/40 hover:bg-p5-white hover:text-p5-black cursor-pointer transition-all font-black italic uppercase text-xs">
+          <span>Importer une sauvegarde</span>
+          <Upload size={16} />
+          <input type="file" accept=".json" onChange={importData} className="hidden" />
+        </label>
+
+        <button 
+          onClick={handleReset}
+          className="w-full flex items-center justify-between p-3 bg-p5-red/20 hover:bg-p5-red text-p5-red hover:text-white transition-all font-black italic uppercase text-xs border border-p5-red/30"
+        >
+          <span>Tout réinitialiser</span>
+          <Trash2 size={16} />
+        </button>
       </div>
-      <p style={{ fontSize: '0.8rem', color: 'var(--p5-gray)', marginTop: '10px' }}>
-        Note: L'importation écrasera votre progression actuelle.
+
+      <p className="text-[10px] text-p5-white/30 italic leading-tight">
+        Note: Les données sont stockées localement dans votre navigateur. L'importation ou la réinitialisation écrasera votre session actuelle.
       </p>
     </div>
   );
