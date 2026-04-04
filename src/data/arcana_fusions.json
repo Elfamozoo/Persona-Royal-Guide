@@ -1,0 +1,17 @@
+{
+  "Le Fou": {
+    "Le Magicien": "La Mort",
+    "Les Amants": "Le Chariot",
+    "Le Chariot": "Le Tempérance"
+  },
+  "Le Magicien": {
+    "Le Fou": "La Mort",
+    "Les Amants": "La Papesse",
+    "Le Chariot": "Le Tempérance"
+  },
+  "Les Amants": {
+    "Le Fou": "Le Chariot",
+    "Le Magicien": "La Papesse",
+    "La Justice": "L'Empereur"
+  }
+}

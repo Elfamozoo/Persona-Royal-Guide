@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import StatTracker from './components/StatTracker'
 import ActivityLogger from './components/ActivityLogger'
 import Calendar from './components/Calendar'
+import FusionLab from './components/FusionLab'
 import { useCalendar } from './context/CalendarContext'
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
         )}
         {activeTab === 'stats' && <StatTracker />}
         {activeTab === 'calendar' && <Calendar />}
-        {activeTab === 'fusions' && <div className="p5-diagonal">Fusions (Bientôt disponible)</div>}
+        {activeTab === 'fusions' && <FusionLab />}
         {activeTab === 'confidants' && <div className="p5-diagonal">Confidents (Bientôt disponible)</div>}
       </main>
 

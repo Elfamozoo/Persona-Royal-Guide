@@ -1,0 +1,10 @@
+[
+  { "name": "Arsène", "level": 1, "arcana": "Le Fou" },
+  { "name": "Pixie", "level": 2, "arcana": "Les Amants" },
+  { "name": "Jack Frost", "level": 11, "arcana": "Le Magicien" },
+  { "name": "Mandrake", "level": 3, "arcana": "La Mort" },
+  { "name": "Agathion", "level": 3, "arcana": "Le Chariot" },
+  { "name": "Slime", "level": 10, "arcana": "Le Fou" },
+  { "name": "Cait Sith", "level": 5, "arcana": "Le Magicien" },
+  { "name": "Angel", "level": 9, "arcana": "La Justice" }
+]
