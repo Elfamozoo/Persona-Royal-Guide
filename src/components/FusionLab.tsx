@@ -44,13 +44,23 @@ const FusionLab: React.FC = () => {
 
         <div className="flex gap-2">
           <button 
-            onClick={() => setMode('forward')}
+            onClick={() => {
+              setMode('forward');
+              setP1Name('');
+              setP2Name('');
+              setTargetName('');
+            }}
             className={`flex items-center gap-2 px-4 py-2 font-bold uppercase italic transition-all ${mode === 'forward' ? 'bg-p5-red text-white scale-105' : 'bg-p5-gray text-white/40'}`}
           >
             <Plus size={18} /> Calcul Normal
           </button>
           <button 
-            onClick={() => setMode('reverse')}
+            onClick={() => {
+              setMode('reverse');
+              setP1Name('');
+              setP2Name('');
+              setTargetName('');
+            }}
             className={`flex items-center gap-2 px-4 py-2 font-bold uppercase italic transition-all ${mode === 'reverse' ? 'bg-p5-red text-white scale-105' : 'bg-p5-gray text-white/40'}`}
           >
             <ArrowLeftRight size={18} /> Inversion
