@@ -15,6 +15,7 @@ interface CalendarContextType {
   logActivity: (log: Omit<ActivityLog, 'date'>) => void;
   nextDay: () => void;
   prevDay: () => void;
+  jumpToDate: (date: Date) => void;
 }
 
 const CalendarContext = createContext<CalendarContextType | undefined>(undefined);
@@ -58,8 +59,12 @@ export const CalendarProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setCurrentDate(prev);
   };
 
+  const jumpToDate = (date: Date) => {
+    setCurrentDate(new Date(date));
+  };
+
   return (
-    <CalendarContext.Provider value={{ currentDate, history, logActivity, nextDay, prevDay }}>
+    <CalendarContext.Provider value={{ currentDate, history, logActivity, nextDay, prevDay, jumpToDate }}>
       {children}
     </CalendarContext.Provider>
   );

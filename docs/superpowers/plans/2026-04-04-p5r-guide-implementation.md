@@ -21,7 +21,7 @@
 - Create: `src/App.tsx`
 - Create: `src/styles/theme.css`
 
-- [ ] **Step 1: Initialize package.json**
+- [x] **Step 1: Initialize package.json**
 ```json
 {
   "name": "persona-5-royal-guide",
@@ -48,7 +48,7 @@
 }
 ```
 
-- [ ] **Step 2: Create vite.config.ts and index.html**
+- [x] **Step 2: Create vite.config.ts and index.html**
 ```typescript
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -72,7 +72,7 @@ export default defineConfig({
 </html>
 ```
 
-- [ ] **Step 3: Create the Persona 5 Aesthetic Theme (CSS)**
+- [x] **Step 3: Create the Persona 5 Aesthetic Theme (CSS)**
 ```css
 :root {
   --p5-red: #D00000;
@@ -122,7 +122,7 @@ body {
 }
 ```
 
-- [ ] **Step 4: Create main.tsx and App.tsx**
+- [x] **Step 4: Create main.tsx and App.tsx**
 ```tsx
 // src/main.tsx
 import React from 'react'
@@ -161,11 +161,11 @@ function App() {
 export default App
 ```
 
-- [ ] **Step 5: Install dependencies and verify build**
+- [x] **Step 5: Install dependencies and verify build**
 Run: `npm install --silent`
 Run: `npm run build`
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 ```bash
 git add .
 git commit -m "feat: initial project scaffolding and P5 theme setup"

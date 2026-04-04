@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-p5-red: #D00000;
+  --color-p5-black: #000000;
+  --color-p5-white: #FFFFFF;
+  --color-p5-gray: #333333;
+  --skew-p5: -2deg;
+}
+
+@layer base {
+  body {
+    @apply bg-p5-black text-p5-white font-sans overflow-x-hidden selection:bg-p5-red selection:text-white;
+  }
+}
+
+@layer components {
+  .p5-skew-box {
+    @apply transform -skew-y-[var(--skew-p5)] bg-p5-red border-b-4 border-p5-white shadow-xl;
+  }
+  
+  .p5-card {
+    @apply bg-p5-gray/30 backdrop-blur-sm border-l-4 border-p5-red p-4 hover:border-p5-white transition-all duration-200 transform hover:scale-[1.02];
+  }
+
+  .p5-button {
+    @apply px-6 py-2 bg-p5-red text-p5-white font-black italic uppercase transition-all 
+           hover:bg-p5-white hover:text-p5-red active:scale-95 disabled:opacity-50;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  }
+}
