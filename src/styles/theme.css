@@ -1,0 +1,46 @@
+:root {
+  --p5-red: #D00000;
+  --p5-black: #000000;
+  --p5-white: #FFFFFF;
+  --p5-gray: #333333;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--p5-black);
+  color: var(--p5-white);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.p5-header {
+  background: var(--p5-red);
+  padding: 20px;
+  transform: skewY(-2deg);
+  margin-top: -10px;
+  box-shadow: 0 5px 0 var(--p5-white);
+  position: relative;
+  z-index: 10;
+}
+
+.p5-header h1 {
+  transform: skewY(2deg);
+  margin: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--p5-red);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 4px solid var(--p5-white);
+  z-index: 100;
+}
