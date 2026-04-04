@@ -4,20 +4,21 @@ const path = require('path');
 const cleanAndSave = (srcPath, destPath, varName) => {
   let content = fs.readFileSync(srcPath, 'utf8');
   
-  // Create a temporary JS file to evaluate the object
-  const tempFile = 'temp_eval.cjs';
+  // Use a unique temp filename to avoid require cache
+  const tempFile = path.join(__dirname, `temp_${Math.random().toString(36).substring(7)}.cjs`);
   let jsContent;
   
   if (varName === 'fullDataRoyal') {
     jsContent = content.replace(/var (\w+) = /g, 'exports.$1 = ') + ';';
   } else {
-    jsContent = content.replace(`var ${varName} = `, 'module.exports = ') + ';';
+    // Some files might use 'const' or 'var'
+    jsContent = content.replace(/(var|const|let)\s+(\w+)\s*=\s*/, 'module.exports = ') + ';';
   }
   
   fs.writeFileSync(tempFile, jsContent);
   
   try {
-    const data = require('./' + tempFile);
+    const data = require(tempFile);
     fs.writeFileSync(destPath, JSON.stringify(data, null, 2));
     console.log(`Successfully converted ${srcPath} to ${destPath}`);
   } catch (err) {

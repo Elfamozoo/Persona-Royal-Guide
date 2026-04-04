@@ -13,7 +13,7 @@
     { "level": 4, "name": "Téméraire", "min": 47 },
     { "level": 5, "name": "Lion", "min": 82 }
   ],
-  "diligence": [
+  "maîtrise": [
     { "level": 1, "name": "Brouillon", "min": 0 },
     { "level": 2, "name": "Appliqué", "min": 12 },
     { "level": 3, "name": "Méticuleux", "min": 33 },

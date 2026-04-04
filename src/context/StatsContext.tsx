@@ -1,12 +1,12 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import statsLevels from '../data/stats_levels.json';
 
-type StatName = 'connaissance' | 'courage' | 'diligence' | 'gentillesse' | 'charme';
+type StatName = 'connaissance' | 'courage' | 'maîtrise' | 'gentillesse' | 'charme';
 
 interface Stats {
   connaissance: number;
   courage: number;
-  diligence: number;
+  maîtrise: number;
   gentillesse: number;
   charme: number;
 }
@@ -22,10 +22,19 @@ const StatsContext = createContext<StatsContextType | undefined>(undefined);
 export const StatsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [stats, setStats] = useState<Stats>(() => {
     const saved = localStorage.getItem('p5r_stats');
-    return saved ? JSON.parse(saved) : {
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      // Migrate old data if necessary
+      if (parsed.diligence !== undefined && parsed.maîtrise === undefined) {
+        parsed.maîtrise = parsed.diligence;
+        delete parsed.diligence;
+      }
+      return parsed;
+    }
+    return {
       connaissance: 0,
       courage: 0,
-      diligence: 0,
+      maîtrise: 0,
       gentillesse: 0,
       charme: 0
     };
@@ -40,7 +49,7 @@ export const StatsProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   const getLevelInfo = (stat: StatName) => {
-    const levels = statsLevels[stat];
+    const levels = (statsLevels as any)[stat];
     const currentPoints = stats[stat];
     
     let currentLevel = levels[0];

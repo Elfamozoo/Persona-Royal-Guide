@@ -16,7 +16,7 @@ const personaList: Persona[] = Object.entries(personaMap).map(([name, data]: [st
   arcana: data.arcana,
   special: !!data.special,
   dlc: !!data.dlc,
-  rare: (fusionData as any).rarePersonaeRoyal.includes(name)
+  rare: (fusionData as any).rarePersonaeRoyal?.includes(name) || false
 })).sort((a, b) => a.level - b.level);
 
 export const getPersonaByName = (name: string) => {
@@ -35,8 +35,13 @@ export const calculateFusion = (p1Name: string, p2Name: string): Persona | null 
     const normal = p1.rare ? p2 : p1;
     if (normal.rare) return null; // Cannot fuse two rare personas
 
-    const rareIndex = (fusionData as any).rarePersonaeRoyal.indexOf(rare.name);
-    const modifier = (fusionData as any).rareCombosRoyal[normal.arcana][rareIndex];
+    const rareIndex = (fusionData as any).rarePersonaeRoyal?.indexOf(rare.name);
+    if (rareIndex === undefined || rareIndex === -1) return null;
+
+    const modifiers = (fusionData as any).rareCombosRoyal?.[normal.arcana];
+    if (!modifiers) return null;
+
+    const modifier = modifiers[rareIndex];
     
     const arcanaPersonas = personaList.filter(p => p.arcana === normal.arcana && !p.rare && !p.special);
     const currentIndex = arcanaPersonas.findIndex(p => p.name === normal.name);
@@ -47,6 +52,8 @@ export const calculateFusion = (p1Name: string, p2Name: string): Persona | null 
 
   // Different Arcana Fusion
   const arcanaCombo = (fusionData as any).arcana2CombosRoyal;
+  if (!arcanaCombo) return null;
+
   const targetArcana = arcanaCombo.find((c: any) => 
     (c.source[0] === p1.arcana && c.source[1] === p2.arcana) || 
     (c.source[0] === p2.arcana && c.source[1] === p1.arcana)
@@ -71,12 +78,14 @@ export const getRecipes = (targetName: string): { sources: string[] }[] => {
   if (!target) return [];
 
   // Check Special Fusions
-  const special = (fusionData as any).specialCombosRoyal.find((s: any) => s.result === targetName);
+  const special = (fusionData as any).specialCombosRoyal?.find((s: any) => s.result === targetName);
   if (special) return [{ sources: special.sources }];
 
   // Regular Fusions (Reverse Search)
   const recipes: { sources: string[] }[] = [];
   const arcanaCombo = (fusionData as any).arcana2CombosRoyal;
+  if (!arcanaCombo) return [];
+
   const relevantArcanaPairs = arcanaCombo.filter((c: any) => c.result === target.arcana);
 
   for (const pair of relevantArcanaPairs) {
@@ -88,14 +97,16 @@ export const getRecipes = (targetName: string): { sources: string[] }[] => {
         if (p1.name === p2.name) continue;
         const result = calculateFusion(p1.name, p2.name);
         if (result && result.name === targetName) {
-          // Avoid duplicate pairs like [A, B] and [B, A]
           const sortedNames = [p1.name, p2.name].sort();
           if (!recipes.find(r => r.sources[0] === sortedNames[0] && r.sources[1] === sortedNames[1])) {
             recipes.push({ sources: sortedNames });
           }
         }
       }
+      // Limit recipes to prevent performance issues
+      if (recipes.length >= 50) break;
     }
+    if (recipes.length >= 50) break;
   }
 
   return recipes;

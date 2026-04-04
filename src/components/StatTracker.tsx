@@ -8,7 +8,7 @@ const StatTracker: React.FC = () => {
   const statConfig = [
     { id: 'connaissance', label: 'Connaissance', icon: Brain },
     { id: 'courage', label: 'Courage', icon: Flame },
-    { id: 'diligence', label: 'Diligence', icon: Hammer },
+    { id: 'maîtrise', label: 'Maîtrise', icon: Hammer },
     { id: 'gentillesse', label: 'Gentillesse', icon: Heart },
     { id: 'charme', label: 'Charme', icon: Star }
   ];
@@ -22,7 +22,7 @@ const StatTracker: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {statConfig.map(stat => {
           const info = getLevelInfo(stat.id as any);
-          const points = stats[stat.id as keyof typeof stats];
+          const points = (stats as any)[stat.id];
           const nextMin = info.nextMin || info.min;
           const progress = nextMin === info.min ? 100 : ((points - info.min) / (nextMin - info.min)) * 100;
           const Icon = stat.icon;
