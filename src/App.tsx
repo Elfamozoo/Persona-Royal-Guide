@@ -3,6 +3,7 @@ import StatTracker from './components/StatTracker'
 import ActivityLogger from './components/ActivityLogger'
 import Calendar from './components/Calendar'
 import FusionLab from './components/FusionLab'
+import BackupManager from './components/BackupManager'
 import { useCalendar } from './context/CalendarContext'
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               BIENVENUE, JOKER. NOUS SOMMES LE {currentDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' }).toUpperCase()}
             </div>
             <ActivityLogger />
+            <BackupManager />
           </div>
         )}
         {activeTab === 'stats' && <StatTracker />}
