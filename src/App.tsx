@@ -3,11 +3,11 @@ import StatTracker from './components/StatTracker'
 import ActivityLogger from './components/ActivityLogger'
 import Calendar from './components/Calendar'
 import FusionLab from './components/FusionLab'
+import SkillsList from './components/SkillsList'
+import ConfidantGuide from './components/ConfidantGuide'
 import BackupManager from './components/BackupManager'
 import { useCalendar } from './context/CalendarContext'
-import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Save } from 'lucide-react'
-
-import ConfidantGuide from './components/ConfidantGuide'
+import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap } from 'lucide-react'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -18,12 +18,12 @@ function App() {
     { id: 'calendar', label: 'Journal', icon: Book },
     { id: 'stats', label: 'Stats', icon: TrendingUp },
     { id: 'fusions', label: 'Fusions', icon: Sparkles },
+    { id: 'skills', label: 'Aptitudes', icon: Zap },
     { id: 'confidants', label: 'Confidents', icon: UserCircle },
   ]
 
   return (
     <div className="min-h-screen pb-24">
-      {/* Dynamic Header */}
       <header className="relative mb-8 pt-4">
         <div className="p5-skew-box absolute top-0 left-0 w-full h-24 -z-10" />
         <div className="container mx-auto px-4 flex justify-between items-center h-20">
@@ -53,11 +53,11 @@ function App() {
         {activeTab === 'stats' && <StatTracker />}
         {activeTab === 'calendar' && <Calendar />}
         {activeTab === 'fusions' && <FusionLab />}
+        {activeTab === 'skills' && <SkillsList />}
         {activeTab === 'confidants' && <ConfidantGuide />}
       </main>
 
-      {/* Bottom Navigation */}
-      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-50 px-2 py-3">
+      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-[150] px-2 py-3">
         <div className="container mx-auto max-w-lg flex justify-between gap-1">
           {tabs.map((tab) => {
             const Icon = tab.icon;
@@ -73,7 +73,7 @@ function App() {
                 }`}
               >
                 <Icon size={isActive ? 24 : 20} />
-                <span className={`text-[10px] font-black uppercase tracking-tighter ${isActive ? 'block' : 'hidden'}`}>
+                <span className={`text-[8px] font-black uppercase tracking-tighter ${isActive ? 'block' : 'hidden'}`}>
                   {tab.label}
                 </span>
               </button>

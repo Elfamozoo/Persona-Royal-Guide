@@ -1,5 +1,6 @@
 import personaMap from '../data/full_personas.json';
 import fusionData from '../data/full_fusion_data.json';
+import skillMap from '../data/full_skills.json';
 
 export interface Persona {
   name: string;
@@ -8,6 +9,18 @@ export interface Persona {
   special?: boolean;
   dlc?: boolean;
   rare?: boolean;
+  stats: number[];
+  elems: string[];
+  skills: { [key: string]: number };
+  trait?: string;
+  inherits?: string;
+}
+
+export interface Skill {
+  name: string;
+  effect: string;
+  element: string;
+  cost?: number;
 }
 
 const personaList: Persona[] = Object.entries(personaMap).map(([name, data]: [string, any]) => ({
@@ -16,10 +29,15 @@ const personaList: Persona[] = Object.entries(personaMap).map(([name, data]: [st
   arcana: data.arcana,
   special: !!data.special,
   dlc: !!data.dlc,
-  rare: (fusionData as any).rarePersonaeRoyal?.includes(name) || false
+  rare: (fusionData as any).rarePersonaeRoyal?.includes(name) || false,
+  stats: data.stats || [0, 0, 0, 0, 0],
+  elems: data.elems || ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+  skills: data.skills || {},
+  trait: data.trait,
+  inherits: data.inherits
 })).sort((a, b) => a.level - b.level);
 
-export const getPersonaByName = (name: string) => {
+export const getPersonaByName = (name: string): Persona | null => {
   return personaList.find(p => p.name === name) || null;
 };
 
@@ -33,7 +51,7 @@ export const calculateFusion = (p1Name: string, p2Name: string): Persona | null 
   if (p1.rare || p2.rare) {
     const rare = p1.rare ? p1 : p2;
     const normal = p1.rare ? p2 : p1;
-    if (normal.rare) return null; // Cannot fuse two rare personas
+    if (normal.rare) return null;
 
     const rareIndex = (fusionData as any).rarePersonaeRoyal?.indexOf(rare.name);
     if (rareIndex === undefined || rareIndex === -1) return null;
@@ -65,11 +83,9 @@ export const calculateFusion = (p1Name: string, p2Name: string): Persona | null 
   const candidates = personaList.filter(p => p.arcana === targetArcana && !p.special && !p.rare);
 
   if (p1.arcana === p2.arcana) {
-    // Same Arcana: Find the highest level <= targetLevel
     return [...candidates].reverse().find(p => p.level <= targetLevel && p.name !== p1.name && p.name !== p2.name) || candidates[0] || null;
   }
 
-  // Find the first persona with level >= targetLevel
   return candidates.find(p => p.level >= targetLevel) || candidates[candidates.length - 1] || null;
 };
 
@@ -77,11 +93,9 @@ export const getRecipes = (targetName: string): { sources: string[] }[] => {
   const target = getPersonaByName(targetName);
   if (!target) return [];
 
-  // Check Special Fusions
   const special = (fusionData as any).specialCombosRoyal?.find((s: any) => s.result === targetName);
   if (special) return [{ sources: special.sources }];
 
-  // Regular Fusions (Reverse Search)
   const recipes: { sources: string[] }[] = [];
   const arcanaCombo = (fusionData as any).arcana2CombosRoyal;
   if (!arcanaCombo) return [];
@@ -103,7 +117,6 @@ export const getRecipes = (targetName: string): { sources: string[] }[] => {
           }
         }
       }
-      // Limit recipes to prevent performance issues
       if (recipes.length >= 50) break;
     }
     if (recipes.length >= 50) break;
@@ -114,3 +127,23 @@ export const getRecipes = (targetName: string): { sources: string[] }[] => {
 
 export const getAllPersonas = () => personaList;
 export const getSpecialPersonas = () => personaList.filter(p => p.special);
+
+export const getAllSkills = (): Skill[] => {
+  return Object.entries(skillMap).map(([name, data]: [string, any]) => ({
+    name,
+    effect: data.effect,
+    element: data.element,
+    cost: data.cost
+  }));
+};
+
+export const getSkillByName = (name: string): Skill | null => {
+  const data = (skillMap as any)[name];
+  if (!data) return null;
+  return {
+    name,
+    effect: data.effect,
+    element: data.element,
+    cost: data.cost
+  };
+};

@@ -38,10 +38,45 @@ const personaNameMap: { [key: string]: string } = {
   "Orichalcum": "Orichalque"
 };
 
+const elementMap: { [key: string]: string } = {
+  "phys": "Physique",
+  "gun": "Arme à feu",
+  "fire": "Feu",
+  "ice": "Glace",
+  "elec": "Élec",
+  "wind": "Vent",
+  "psy": "Psy",
+  "nuke": "Nucléaire",
+  "bless": "Béni",
+  "curse": "Maudit",
+  "ailment": "Altération",
+  "healing": "Soin",
+  "support": "Soutien",
+  "passive": "Passif",
+  "almighty": "Tout-puissant"
+};
+
+const resistanceMap: { [key: string]: string } = {
+  "wk": "Faible",
+  "rs": "Résistant",
+  "nu": "Nul",
+  "rp": "Renvoie",
+  "ab": "Absorbe",
+  "-": "-"
+};
+
 export const translateArcana = (arcana: string): string => {
   return arcanaMap[arcana] || arcana;
 };
 
 export const translatePersona = (name: string): string => {
   return personaNameMap[name] || name;
+};
+
+export const translateElement = (element: string): string => {
+  return elementMap[element.toLowerCase()] || element;
+};
+
+export const translateResistance = (code: string): string => {
+  return resistanceMap[code.toLowerCase()] || code;
 };
