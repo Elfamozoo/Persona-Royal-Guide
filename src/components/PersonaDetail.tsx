@@ -1,7 +1,7 @@
 import React from 'react';
 import { Persona, getSkillByName } from '../utils/fusionEngine';
 import { translateArcana, translatePersona, translateResistance } from '../utils/translate';
-import { Shield, Sword, Zap, X } from 'lucide-react';
+import { Shield, Sword, Zap, X, Sparkles } from 'lucide-react';
 
 interface Props {
   persona: Persona;
