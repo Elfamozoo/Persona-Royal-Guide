@@ -1,0 +1,48 @@
+[
+  {
+    "id": "etudier_biblio",
+    "name": "Étudier à la bibliothèque",
+    "base_stat": "connaissance",
+    "points": 2,
+    "bonus": { "condition": "rain", "points": 1, "description": "Bonus jour de pluie" }
+  },
+  {
+    "id": "etudier_diner",
+    "name": "Étudier au Diner",
+    "base_stat": "connaissance",
+    "points": 2,
+    "bonus": { "condition": "rain", "points": 1, "description": "Bonus jour de pluie" }
+  },
+  {
+    "id": "bains_publics",
+    "name": "Bains Publics",
+    "base_stat": "charme",
+    "points": 2,
+    "bonus": { "condition": "mon_thu", "points": 1, "description": "Bonus Lundi/Jeudi" }
+  },
+  {
+    "id": "burger_challenge",
+    "name": "Big Bang Burger Challenge",
+    "base_stat": "courage",
+    "points": 2,
+    "description": "Augmente aussi d'autres stats si réussi"
+  },
+  {
+    "id": "nettoyer_leblanc",
+    "name": "Nettoyer le Leblanc",
+    "base_stat": "gentillesse",
+    "points": 2
+  },
+  {
+    "id": "travailler_fleuriste",
+    "name": "Travailler chez le fleuriste",
+    "base_stat": "gentillesse",
+    "points": 2
+  },
+  {
+    "id": "lire_livre",
+    "name": "Lire un livre",
+    "base_stat": "variable",
+    "points": 3
+  }
+]
