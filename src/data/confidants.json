@@ -16,7 +16,7 @@
   },
   {
     "name": "Ann Takamaki",
-    "arcana": "Les Amoureux",
+    "arcana": "L'Amoureux",
     "location": "Centre commercial souterrain de Shibuya",
     "ranks": [
       { "rank": 2, "choices": ["Tu te sens mieux ? (+3)", "Tu as peut-être raison (+3)", "Je ne pouvais pas t'abandonner (+3)"] },
@@ -57,6 +57,142 @@
       { "rank": 7, "choices": ["Ça nous arrive à tous (+3)", "Fermez et reposez-vous (+2)"] },
       { "rank": 8, "choices": ["Je suis ton allié (+2)", "Tout pour mes examens (+2)"] },
       { "rank": 9, "choices": ["Je voulais te voir (Romance) (+3) then Je t'aime (+2)", "C'était pour mes examens (Amitié) (+2)"] }
+    ]
+  },
+  {
+    "name": "Makoto Niijima",
+    "arcana": "La Papesse",
+    "location": "Lycée Shujin (Conseil des élèves) / Aoyama-Itchome",
+    "ranks": [
+      { "rank": 2, "choices": ["Tu es drôlement au courant (+2)", "C'était dangereux (+3)"], "phone": "On ne peut plus d'accord (+2)" },
+      { "rank": 3, "choices": ["Ne va pas t'imaginer des trucs (+2)", "Tu peux changer (+3)"], "phone": "Vous vous entendez bien (+2)" },
+      { "rank": 4, "choices": ["Ça ne te ressemble pas (+2)", "Pourquoi tu l'utilises ? (+3)", "C'est un super projet ! (+3)"] },
+      { "rank": 5, "choices": ["Il a l'air louche (+3)", "Pas de problème ! (+3)"], "phone": "Essaie de la contacter (+2)" },
+      { "rank": 6, "choices": ["L'amour a plusieurs visages (+3)"], "phone": "Dis-lui que tu as rendez-vous (+3)" }
+    ]
+  },
+  {
+    "name": "Haru Okumura",
+    "arcana": "L'Impératrice",
+    "location": "Toit du Lycée Shujin",
+    "ranks": [
+      { "rank": 2, "choices": ["Tu veux ouvrir un café ? (+3)", "C'est louche (+3)", "C'est un problème complexe (+3)"], "phone": "Melon bijou (+3)" },
+      { "rank": 3, "choices": ["T'en fais pas, tout ira bien (+3)", "Je ne suis pas intéressé (+3)", "Pas encore (+3)"], "phone": "Intelligent (+3)" },
+      { "rank": 4, "choices": ["Il doit être exceptionnel (+3)", "Okidoki (+3)", "On peut lui demander (+3)"], "phone": "On devrait se revoir bientôt (+3)" },
+      { "rank": 5, "choices": ["La vérité est... (+3)", "Il y a forcément une raison (+3)", "C'est à toi de décider (+3)"] }
+    ]
+  },
+  {
+    "name": "Yusuke Kitagawa",
+    "arcana": "L'Empereur",
+    "location": "Station souterraine de Shibuya",
+    "ranks": [
+      { "rank": 2, "choices": ["C'est audacieux (+2)", "J'ai hâte (+3)"], "phone": "T'en fais déjà assez (+2)" },
+      { "rank": 3, "choices": ["Faut pas que ça te touche (+2)", "Ça ne te ressemble pas (+3)"], "phone": "Bien dit (+2)" },
+      { "rank": 4, "choices": ["L'amour a plusieurs formes (+3)"], "phone": "Peu importe (+2)" },
+      { "rank": 5, "choices": ["Il faut que je me déshabille ? (+3)", "Bien sûr (+3)"], "phone": "Tu dois garder espoir (+2)" }
+    ]
+  },
+  {
+    "name": "Goro Akechi",
+    "arcana": "La Justice",
+    "location": "Kichijoji (Fléchettes/Jazz Jin)",
+    "ranks": [
+      { "rank": 2, "choices": ["Tu as l'air toujours très occupé (+2)", "Je vais y aller doucement (+2)", "La prochaine fois, ne te retiens pas (+2)"], "phone": "En tant que rival ? (+2)" },
+      { "rank": 3, "choices": ["Tu aurais dû t'en douter (+3)"], "phone": "On s'est bien amusés, non ? (+2)" },
+      { "rank": 4, "choices": ["Voilà un endroit que j'apprécie (+3)", "Tu me conseilles quoi ? (+3)", "J'adore cet endroit (+2)", "Oui, souvent (+3)"], "phone": "Je comprends, je crois (+2)" },
+      { "rank": 5, "choices": ["T'es bon aux jeux de tir, hein ? (+2)"] }
+    ]
+  },
+  {
+    "name": "Futaba Sakura",
+    "arcana": "L'Ermite",
+    "location": "Yongen-Jaya (Extérieur du Leblanc)",
+    "ranks": [
+      { "rank": 2, "choices": ["C'est une excellente idée (+2)", "Si on travaille ensemble, oui (+3)"], "phone": "J'en suis sûr (+2)" },
+      { "rank": 3, "choices": ["J'allais te chercher (+3)", "Content de te revoir (+3)"], "phone": "On va faire de notre mieux (+2)" },
+      { "rank": 4, "choices": ["On va y arriver, ensemble (+3)", "C'est plutôt attendrissant (+3)"], "phone": "Je serais toujours là (+2)" },
+      { "rank": 5, "choices": ["Ça doit être ça (+3)", "C'est le héros (+3)"], "phone": "Tu t'en es très bien sorti (+2)" }
+    ]
+  },
+  {
+    "name": "Chihaya Mifune",
+    "arcana": "La Roue",
+    "location": "Shinjuku",
+    "ranks": [
+      { "rank": 2, "choices": ["Ouvre un peu ton esprit (+2)"], "phone": "Bien sûr (+2)" },
+      { "rank": 4, "choices": ["Aie confiance en toi (+3)"], "phone": "Je n'ai pas fait grand-chose (+2)" },
+      { "rank": 5, "choices": ["Tu mets du cœur à l'ouvrage (+3)"] },
+      { "rank": 6, "choices": ["Pour moi, tu es juste Chihaya (+3)"], "phone": "Sois honnête avec toi-même (+2)" }
+    ]
+  },
+  {
+    "name": "Munehisa Iwai",
+    "arcana": "Le Pendu",
+    "location": "Untouchable (Shibuya)",
+    "ranks": [
+      { "rank": 2, "choices": ["Comment ça va, votre rhume ? (+2)"] },
+      { "rank": 3, "choices": ["J'en étais sûr... (+3)", "On a conclu un marché, non ? (+3)"] },
+      { "rank": 4, "choices": ["Et ma récompense ? (+3)"], "phone": "Je suis d'accord (+2)" },
+      { "rank": 5, "choices": ["C'est pathétique (+3)", "J'ai besoin d'armes (+3)"], "phone": "Tu as raison (+2)" }
+    ]
+  },
+  {
+    "name": "Sadayo Kawakami",
+    "arcana": "La Tempérance",
+    "location": "Yongen-Jaya (Téléphone du Leblanc)",
+    "ranks": [
+      { "rank": 3, "choices": ["Faites de la vraie cuisine (+2)", "Je vous demanderai plus souvent (+3)"], "phone": "Merci (+3)" },
+      { "rank": 4, "choices": ["C'est carrément déplacé (+2)", "Apprenez à vous aimer (+3)"] },
+      { "rank": 6, "choices": ["Vous voulez vous reposer ? (+2)", "Et si vous rentriez chez vous ? (+3)"], "phone": "Et vous, ça va ? (+2)" },
+      { "rank": 7, "choices": ["Ne les payez pas (+3)", "Prenez plus de temps pour y penser (+3)"] }
+    ]
+  },
+  {
+    "name": "Ichiko Ohya",
+    "arcana": "Le Diable",
+    "location": "Shinjuku (Bar Crossroads)",
+    "ranks": [
+      { "rank": 5, "choices": ["C'est impardonnable (+3)"], "phone": "Ça ne me dérange pas (+2)" },
+      { "rank": 7, "choices": ["Trouvons un autre moyen (+3)", "Je t'aime comme ça (+3)"] }
+    ]
+  },
+  {
+    "name": "Shinya Oda",
+    "arcana": "La Tour",
+    "location": "Arcade d'Akihabara",
+    "ranks": [
+      { "rank": 2, "choices": ["Ne me compare pas à toi (+3)", "Pas cool, cet employé (+2)", "Moi aussi / Je leur dirai (+3)"], "phone": "Pour pouvoir te battre (+2)" },
+      { "rank": 5, "choices": ["Il a dû tricher (+3)", "Il te faut une nouvelle stratégie (+3)"] }
+    ]
+  },
+  {
+    "name": "Hifumi Togo",
+    "arcana": "L'Étoile",
+    "location": "Église de Kanda",
+    "ranks": [
+      { "rank": 7, "choices": ["Ça peut se jouer sur de la chance (+3)", "Donne tout ce que tu as (+2)"], "phone": "Je crois en toi (+2)" }
+    ]
+  },
+  {
+    "name": "Kasumi Yoshizawa",
+    "arcana": "La Foi",
+    "location": "Kichijoji",
+    "ranks": [
+      { "rank": 2, "choices": ["C'est que le début (+2)", "La prochaine fois, alors (+2)"], "phone": "C'était prévisible (+2)" },
+      { "rank": 3, "choices": ["Préparer un bento ? (+2)", "Ça a l'air délicieux (+2)", "C'est pour toi, tout ça ? (+3)"] },
+      { "rank": 4, "choices": ["Un look plutôt moderne (+3)", "Bien sûr ! (+2)"], "phone": "Tu devrais avoir confiance (+2)" }
+    ]
+  },
+  {
+    "name": "Takuto Maruki",
+    "arcana": "L'Édile",
+    "location": "Lycée Shujin (Infirmerie)",
+    "ranks": [
+      { "rank": 2, "choices": ["Je stresse un peu (+2)", "Mais ça a l'air bien (+3)", "Bon, Ok (+2)"] },
+      { "rank": 3, "choices": ["Grâce à vous, j'imagine (+2)", "Bien sûr (+2)"], "phone": "C'est du beau travail (+2)" },
+      { "rank": 4, "choices": ["Je crois que je comprends (+3)", "Ça à l'air chouette ! (+3)"], "phone": "Je vais très bien (+2)" },
+      { "rank": 5, "choices": ["Ils ont l'air super bons (+3)", "Vous avez entièrement raison (+3)"] }
     ]
   }
 ]
