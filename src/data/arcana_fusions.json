@@ -1,17 +1,48 @@
 {
   "Le Fou": {
     "Le Magicien": "La Mort",
+    "La Papesse": "La Force",
+    "L'Impératrice": "Le Pape",
+    "L'Empereur": "Le Conseil",
+    "Le Pape": "Le Conseil",
     "Les Amants": "Le Chariot",
-    "Le Chariot": "Le Tempérance"
+    "Le Chariot": "La Tempérance",
+    "La Justice": "L'Étoile",
+    "L'Ermite": "Le Pape",
+    "La Fortune": "La Foi",
+    "La Force": "La Mort",
+    "Le Pendu": "Le Conseil",
+    "La Mort": "L'Ermite",
+    "La Tempérance": "Le Hiérophante",
+    "Le Diable": "La Tempérance",
+    "La Tour": "L'Empereur",
+    "L'Étoile": "Le Magicien",
+    "La Lune": "Le Conseil",
+    "Le Soleil": "La Mort",
+    "Le Jugement": "Le Soleil",
+    "La Foi": "Le Conseil",
+    "Le Conseil": "Le Mat"
   },
   "Le Magicien": {
-    "Le Fou": "La Mort",
-    "Les Amants": "La Papesse",
-    "Le Chariot": "Le Tempérance"
-  },
-  "Les Amants": {
-    "Le Fou": "Le Chariot",
-    "Le Magicien": "La Papesse",
-    "La Justice": "L'Empereur"
+    "La Papesse": "La Tempérance",
+    "L'Impératrice": "La Justice",
+    "L'Empereur": "Le Pendu",
+    "Le Pape": "La Mort",
+    "Les Amants": "Le Diable",
+    "Le Chariot": "La Papesse",
+    "La Justice": "L'Empereur",
+    "L'Ermite": "Les Amants",
+    "La Fortune": "La Justice",
+    "La Force": "Le Fou",
+    "Le Pendu": "La Fortune",
+    "La Mort": "L'Ermite",
+    "La Tempérance": "Le Chariot",
+    "Le Diable": "Le Pape",
+    "La Tour": "La Fortune",
+    "L'Étoile": "La Papesse",
+    "La Lune": "L'Amant",
+    "Le Soleil": "Le Jugement",
+    "La Foi": "La Tempérance",
+    "Le Conseil": "Le Pape"
   }
 }

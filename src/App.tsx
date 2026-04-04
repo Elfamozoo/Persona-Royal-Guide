@@ -7,6 +7,8 @@ import BackupManager from './components/BackupManager'
 import { useCalendar } from './context/CalendarContext'
 import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Save } from 'lucide-react'
 
+import ConfidantGuide from './components/ConfidantGuide'
+
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
   const { currentDate } = useCalendar()
@@ -51,12 +53,7 @@ function App() {
         {activeTab === 'stats' && <StatTracker />}
         {activeTab === 'calendar' && <Calendar />}
         {activeTab === 'fusions' && <FusionLab />}
-        {activeTab === 'confidants' && (
-          <div className="p-12 text-center border-4 border-p5-red transform rotate-1 bg-p5-gray/20">
-            <h2 className="text-4xl font-black uppercase italic mb-4">Base de Données des Confidents</h2>
-            <p className="text-p5-white/60">Chargement des dossiers d'interrogatoire en cours...</p>
-          </div>
-        )}
+        {activeTab === 'confidants' && <ConfidantGuide />}
       </main>
 
       {/* Bottom Navigation */}

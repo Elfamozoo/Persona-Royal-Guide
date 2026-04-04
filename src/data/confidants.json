@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ryuji Sakamoto",
+    "arcana": "Le Chariot",
+    "location": "Lycée Shujin (2F) / Arcade de Shibuya",
+    "ranks": [
+      { "rank": 2, "choices": ["Je compte sur toi (+3)", "Tu as l'air enthousiaste (+2)"], "phone": "C'est jamais trop tard (+2)" },
+      { "rank": 3, "choices": ["Calme-toi, Ryuji (+3)", "Je ne peux pas t'en vouloir (+3)", "Ne nous battons pas (+2)"] },
+      { "rank": 4, "choices": ["C'est ce que tu as décidé (+3)", "Tu as raison (+3)", "Tu as l'air enthousiaste (+2)"] },
+      { "rank": 5, "choices": ["On n'a rien décidé (+3)", "Tu veux qu'on aille voir ? (+2)"] },
+      { "rank": 6, "choices": ["Restons ici (+3)", "C'est n'importe quoi (+3)", "Absolument (+3)"], "phone": "C'est possible (+2)" },
+      { "rank": 7, "choices": ["On va les arrêter (+3)"] },
+      { "rank": 8, "choices": ["Tout s'est arrangé (+3)", "Je me suis contenté d'observer (+3)", "T'étais pas exactement cool (+3)"] },
+      { "rank": 9, "choices": ["Tu as fait du bon boulot (+3)", "On forme une bonne équipe aussi (+3)"] }
+    ]
+  },
+  {
+    "name": "Ann Takamaki",
+    "arcana": "Les Amoureux",
+    "location": "Centre commercial souterrain de Shibuya",
+    "ranks": [
+      { "rank": 2, "choices": ["Tu te sens mieux ? (+3)", "Tu as peut-être raison (+3)", "Je ne pouvais pas t'abandonner (+3)"] },
+      { "rank": 3, "choices": ["On peut arrêter là ? (+3)", "Ça t'est déjà arrivé ? (+3)", "Ça a l'air sympa, cette liberté (+2)"] },
+      { "rank": 4, "choices": ["Je vois ce que tu veux dire (+3)", "C'est à mourir de rire (+3)", "Dis-moi (+3)", "Bonne idée (+3)"] },
+      { "rank": 5, "choices": ["Laisse tomber (+2)", "Elle est incroyable, hein... (+2)", "C'était gracieux (+2)"] },
+      { "rank": 6, "choices": ["On dirait bien (+3)", "Montre-lui ta force (+3)"], "phone": "Je t'encouragerai (+2)" },
+      { "rank": 7, "choices": ["Elle t'admire (+3)", "Vas-y, championne (+3)"], "phone": "Tu gères (+2)" },
+      { "rank": 8, "choices": ["Tu as du cran (+3)", "C'est certain (+3)"] },
+      { "rank": 9, "choices": ["Tu m'as, moi (Romance) (+3)", "Tu as les autres (Amitié) (+2)"] }
+    ]
+  },
+  {
+    "name": "Sojiro Sakura",
+    "arcana": "Le Pape",
+    "location": "Café Leblanc",
+    "ranks": [
+      { "rank": 2, "choices": ["Préparer le café (+2)", "Ce type me paraissait louche (+2)", "J'ai envie de plaire aux femmes (+2)"] },
+      { "rank": 3, "choices": ["Fine mais pas trop (+2)", "Des problèmes ? (+2)"] },
+      { "rank": 4, "choices": ["Dites-m'en plus (+3)", "Appeler Sojiro (+3)"], "phone": "Compris (+2)" },
+      { "rank": 5, "choices": ["Je crois que je suis accro ! (+3)", "Elle n'était pas banale, hein (+3)", "Et ça a fini par payer (+2)"] },
+      { "rank": 6, "choices": ["Chacun ses choix (+3)", "Fermez-là (+3)", "C'était un plaisir (+2)"] },
+      { "rank": 7, "choices": ["Tu as une fille géniale (+3)", "Félicitations (+3)"] },
+      { "rank": 8, "choices": ["Tu as raison (+3)", "Quelque chose au curry (+3)"] },
+      { "rank": 9, "choices": ["C'est super (+3)", "Tu as une bonne fille (+3)"] }
+    ]
+  },
+  {
+    "name": "Tae Takemi",
+    "arcana": "La Mort",
+    "location": "Clinique Takemi (Yongen-Jaya)",
+    "ranks": [
+      { "rank": 2, "choices": ["J'ai un souffle au cœur (+2)", "C'est clair (+2)"] },
+      { "rank": 3, "choices": ["Ça ne me dérange pas (+2)", "Je n'ai pas peur (+2)"] },
+      { "rank": 4, "choices": ["Le docteur Takemi va regarder (+2)", "Vous avez l'air heureuse (+3)"] },
+      { "rank": 5, "choices": ["Ça marche (+3)"], "phone": "Et Miwa ? (+2)" },
+      { "rank": 6, "choices": ["Ça vous va bien (+3)"], "phone": "Tu peux compter sur moi (+2)" },
+      { "rank": 7, "choices": ["Ça nous arrive à tous (+3)", "Fermez et reposez-vous (+2)"] },
+      { "rank": 8, "choices": ["Je suis ton allié (+2)", "Tout pour mes examens (+2)"] },
+      { "rank": 9, "choices": ["Je voulais te voir (Romance) (+3) then Je t'aime (+2)", "C'était pour mes examens (Amitié) (+2)"] }
+    ]
+  }
+]
