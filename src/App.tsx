@@ -57,8 +57,8 @@ function App() {
         {activeTab === 'confidants' && <ConfidantGuide />}
       </main>
 
-      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-[150] px-2 py-3">
-        <div className="container mx-auto max-w-lg flex justify-between gap-1">
+      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-[150] px-2 h-16 flex items-center">
+        <div className="container mx-auto max-w-lg flex justify-between items-stretch h-full gap-1">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -66,13 +66,13 @@ function App() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex flex-col items-center gap-1 flex-1 py-2 rounded-lg transition-all duration-300 ${
+                className={`flex flex-col items-center justify-center gap-1 flex-1 transition-all duration-300 ${
                   isActive 
-                    ? 'bg-p5-red text-white scale-110 shadow-lg' 
+                    ? 'bg-p5-red text-white shadow-lg' 
                     : 'text-p5-white/40 hover:text-p5-white hover:bg-p5-gray/20'
                 }`}
               >
-                <Icon size={isActive ? 24 : 20} />
+                <Icon size={isActive ? 22 : 20} />
                 <span className={`text-[8px] font-black uppercase tracking-tighter ${isActive ? 'block' : 'hidden'}`}>
                   {tab.label}
                 </span>
