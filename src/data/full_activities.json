@@ -13,7 +13,8 @@
     { "id": "flowerpedia", "name": "Flowerpedia", "chapters": 2, "stat": "Gentillesse", "points": 3, "location": "Shinjuku" },
     { "id": "science_batting", "name": "Science du Batting", "chapters": 2, "stat": "Maîtrise", "points": 3, "location": "Shinjuku" },
     { "id": "maitrise_cinema", "name": "Maîtrise du Cinéma", "chapters": 2, "stat": "Connaissance", "points": 3, "location": "Shinjuku" },
-    { "id": "art_du_jeu", "name": "L'Art du Jeu", "chapters": 2, "stat": "Maîtrise", "points": 3, "location": "Shinjuku" }
+    { "id": "art_du_jeu", "name": "L'Art du Jeu", "chapters": 2, "stat": "Maîtrise", "points": 3, "location": "Shinjuku" },
+    { "id": "lecture_rapide", "name": "Lecture Rapide", "chapters": 1, "stat": "Spécial", "points": 0, "location": "Jinbocho" }
   ],
   "dvds": [
     { "id": "x_folders", "name": "X-Folders", "stat": "Courage", "points": 2, "location": "Shibuya Rental" },
@@ -29,6 +30,22 @@
     { "id": "bols_de_boeuf", "name": "Travailler au Bols de bœuf (Ore no Beko)", "stat": "Maîtrise", "points": 2, "location": "Shibuya" },
     { "id": "etudier_biblio", "name": "Étudier à la bibliothèque", "stat": "Connaissance", "points": 2, "bonus": { "type": "rain", "points": 1 } },
     { "id": "etudier_diner", "name": "Étudier au Diner", "stat": "Connaissance", "points": 2, "bonus": { "type": "rain", "points": 1 } },
-    { "id": "bains_publics", "name": "Bains Publics", "stat": "Charme", "points": 2, "bonus": { "type": "mon_thu", "points": 1 } }
+    { "id": "bains_publics", "name": "Bains Publics", "stat": "Charme", "points": 2, "bonus": { "type": "mon_thu", "points": 1 } },
+    { "id": "flechettes", "name": "Jouer aux Fléchettes", "stat": "Maîtrise", "points": 2, "location": "Kichijoji (Penguin Sniper)" },
+    { "id": "billard", "name": "Jouer au Billard", "stat": "Variable", "points": 1, "location": "Kichijoji (Penguin Sniper)" },
+    { "id": "peche", "name": "Aller à la Pêche", "stat": "Maîtrise", "points": 1, "location": "Ichigaya" },
+    { "id": "temple", "name": "Méditer au Temple", "stat": "PC Max", "points": 1, "location": "Kichijoji" },
+    { "id": "salle_sport", "name": "Salle de Sport (Gym)", "stat": "PV/PC Max", "points": 1, "location": "Shibuya / Kichijoji" },
+    { "id": "cages_frappe", "name": "Cages de Frappe (Batting)", "stat": "Maîtrise", "points": 2, "location": "Yongen-Jaya" },
+    { "id": "mots_croises", "name": "Faire des Mots croisés", "stat": "Connaissance", "points": 1, "location": "Café Leblanc", "note": "Ne consomme pas de temps" },
+    { "id": "outils_infiltration", "name": "Fabriquer des outils", "stat": "Maîtrise", "points": 2, "location": "Chambre de Joker" },
+    { "id": "nettoyer_leblanc", "name": "Nettoyer le Leblanc", "stat": "Gentillesse", "points": 2, "location": "Café Leblanc" }
+  ],
+  "jeux_video": [
+    { "id": "star_forneus", "name": "Star Forneus", "stat": "Courage", "points": 2, "location": "Chambre de Joker" },
+    { "id": "gambla_goemon", "name": "Gambla Goemon", "stat": "Charme", "points": 2, "location": "Chambre de Joker" },
+    { "id": "punch_out", "name": "Punch-Out", "stat": "Maîtrise", "points": 2, "location": "Chambre de Joker" },
+    { "id": "train_of_life", "name": "Train of Life", "stat": "Gentillesse", "points": 2, "location": "Chambre de Joker" },
+    { "id": "power_records", "name": "Power Records", "stat": "Connaissance", "points": 2, "location": "Chambre de Joker" }
   ]
 }

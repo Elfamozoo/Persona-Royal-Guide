@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useCalendar } from '../context/CalendarContext';
 import { useStats } from '../context/StatsContext';
 import data from '../data/full_activities.json';
-import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain, Tv, Music } from 'lucide-react';
+import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain, Tv, Music, Gamepad2 } from 'lucide-react';
 
 const ActivityLogger: React.FC = () => {
   const { currentDate, logActivity, nextDay, jumpToDate } = useCalendar();
   const { addPoints } = useStats();
   const [isRainy, setIsRainy] = useState(false);
   const [timeSlot, setTimeSlot] = useState<'Matin' | 'Après-midi' | 'Soir'>('Après-midi');
-  const [filter, setFilter] = useState<'all' | 'books' | 'activities' | 'dvds'>('all');
+  const [filter, setFilter] = useState<'all' | 'books' | 'activities' | 'dvds' | 'games'>('all');
 
   const handleLog = (activity: any) => {
     let points = activity.points;
@@ -22,11 +22,10 @@ const ActivityLogger: React.FC = () => {
       points += activity.bonus.points;
     }
 
-    if (activity.stat !== 'special' && activity.stat !== 'variable') {
-      // Map display name to internal key if necessary
+    if (activity.stat !== 'Spécial' && activity.stat !== 'Variable' && !activity.stat.includes('Max')) {
       const statKey = activity.stat.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // "Maîtrise" -> "maitrise"
-      addPoints(statKey as any, points * 2); // Roughly mapping notes to internal points
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); 
+      addPoints(statKey as any, points * 2); 
     }
 
     logActivity({
@@ -37,10 +36,12 @@ const ActivityLogger: React.FC = () => {
       statName: activity.stat
     });
 
-    if (timeSlot === 'Après-midi') setTimeSlot('Soir');
-    else {
-      setTimeSlot('Après-midi');
-      nextDay();
+    if (activity.note !== "Ne consomme pas de temps") {
+      if (timeSlot === 'Après-midi') setTimeSlot('Soir');
+      else {
+        setTimeSlot('Après-midi');
+        nextDay();
+      }
     }
   };
 
@@ -75,54 +76,72 @@ const ActivityLogger: React.FC = () => {
         <button onClick={() => setFilter('activities')} className={`p5-button text-xs md:text-sm ${filter === 'activities' ? 'opacity-100' : 'opacity-50'}`}>Activités</button>
         <button onClick={() => setFilter('books')} className={`p5-button text-xs md:text-sm ${filter === 'books' ? 'opacity-100' : 'opacity-50'}`}>Livres</button>
         <button onClick={() => setFilter('dvds')} className={`p5-button text-xs md:text-sm ${filter === 'dvds' ? 'opacity-100' : 'opacity-50'}`}>DVDs</button>
+        <button onClick={() => setFilter('games')} className={`p5-button text-xs md:text-sm ${filter === 'games' ? 'opacity-100' : 'opacity-50'}`}>Jeux Vidéo</button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {(filter === 'all' || filter === 'activities') && data.activites.map(act => (
           <button key={act.id} onClick={() => handleLog(act)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{act.name}</h4>
-              <Briefcase size={20} className="text-p5-red" />
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors leading-tight">{act.name}</h4>
+              <Briefcase size={20} className="text-p5-red shrink-0" />
             </div>
             <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
-              <span className="font-black italic uppercase text-xs tracking-tighter">{act.stat}</span>
+              <span className="font-black italic uppercase text-[10px] tracking-tighter">{act.stat}</span>
               <div className="flex text-p5-red">
-                {[...Array(act.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+                {[...Array(Math.max(0, act.points))].map((_, i) => <Music key={i} size={12} fill="currentColor" />)}
               </div>
-              <span className="text-xs font-bold text-white/60 ml-auto">+{act.points}</span>
+              <span className="text-[10px] font-bold text-white/60 ml-auto">+{act.points}</span>
             </div>
+            {act.note && <div className="mt-2 text-[9px] text-p5-red font-black uppercase italic">{act.note}</div>}
           </button>
         ))}
 
         {(filter === 'all' || filter === 'books') && data.livres.map(book => (
           <button key={book.id} onClick={() => handleLog(book)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{book.name}</h4>
-              <BookOpen size={20} className="text-p5-red" />
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors leading-tight">{book.name}</h4>
+              <BookOpen size={20} className="text-p5-red shrink-0" />
             </div>
             <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
-              <span className="font-black italic uppercase text-xs tracking-tighter">{book.stat}</span>
+              <span className="font-black italic uppercase text-[10px] tracking-tighter">{book.stat}</span>
               <div className="flex text-p5-red">
-                {[...Array(book.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+                {[...Array(Math.max(0, book.points))].map((_, i) => <Music key={i} size={12} fill="currentColor" />)}
               </div>
-              <span className="text-xs font-bold text-white/60 ml-auto">+{book.points}</span>
+              <span className="text-[10px] font-bold text-white/60 ml-auto">+{book.points}</span>
             </div>
-            <div className="mt-2 text-[10px] text-white/30 uppercase font-black tracking-widest">{book.location} • {book.chapters} chapitres</div>
+            <div className="mt-2 text-[9px] text-white/30 uppercase font-black tracking-widest">{book.location} • {book.chapters} chapitres</div>
           </button>
         ))}
 
         {(filter === 'all' || filter === 'dvds') && data.dvds.map(dvd => (
           <button key={dvd.id} onClick={() => handleLog(dvd)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{dvd.name}</h4>
-              <Tv size={20} className="text-p5-red" />
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors leading-tight">{dvd.name}</h4>
+              <Tv size={20} className="text-p5-red shrink-0" />
             </div>
             <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
-              <span className="font-black italic uppercase text-xs tracking-tighter">{dvd.stat}</span>
+              <span className="font-black italic uppercase text-[10px] tracking-tighter">{dvd.stat}</span>
               <div className="flex text-p5-red">
-                {[...Array(dvd.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+                {[...Array(Math.max(0, dvd.points))].map((_, i) => <Music key={i} size={12} fill="currentColor" />)}
               </div>
-              <span className="text-xs font-bold text-white/60 ml-auto">+{dvd.points}</span>
+              <span className="text-[10px] font-bold text-white/60 ml-auto">+{dvd.points}</span>
+            </div>
+          </button>
+        ))}
+
+        {(filter === 'all' || filter === 'games') && data.jeux_video.map(game => (
+          <button key={game.id} onClick={() => handleLog(game)} className="p5-card text-left group">
+            <div className="flex justify-between items-start">
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors leading-tight">{game.name}</h4>
+              <Gamepad2 size={20} className="text-p5-red shrink-0" />
+            </div>
+            <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
+              <span className="font-black italic uppercase text-[10px] tracking-tighter">{game.stat}</span>
+              <div className="flex text-p5-red">
+                {[...Array(Math.max(0, game.points))].map((_, i) => <Music key={i} size={12} fill="currentColor" />)}
+              </div>
+              <span className="text-[10px] font-bold text-white/60 ml-auto">+{game.points}</span>
             </div>
           </button>
         ))}
