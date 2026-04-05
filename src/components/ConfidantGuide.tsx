@@ -50,8 +50,8 @@ const ConfidantGuide: React.FC = () => {
       </div>
 
       {selectedConfidant && (
-        <div className="fixed inset-0 z-[100] bg-p5-black/90 backdrop-blur-md p-4 md:p-8 overflow-y-auto">
-          <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in zoom-in duration-300">
+        <div className="fixed inset-0 z-[200] bg-p5-black/95 backdrop-blur-md p-4 md:p-8 overflow-y-auto">
+          <div className="max-w-4xl mx-auto space-y-8 pb-32 animate-in fade-in zoom-in duration-300">
             <button 
               onClick={() => setSelectedConfidant(null)}
               className="p5-button"

@@ -14,7 +14,7 @@ const statNames = ["Force", "Magie", "Endu", "Agil", "Chance"];
 const PersonaDetail: React.FC<Props> = ({ persona, onClose }) => {
   return (
     <div className="fixed inset-0 z-[200] bg-p5-black/95 backdrop-blur-xl p-4 md:p-8 overflow-y-auto">
-      <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-500">
+      <div className="max-w-5xl mx-auto space-y-8 pb-32 animate-in fade-in slide-in-from-bottom-8 duration-500">
         
         {/* Header */}
         <div className="flex justify-between items-start">
