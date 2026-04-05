@@ -1,0 +1,83 @@
+[
+  { "date": "12/04", "type": "Cours", "question": "Quel était le motif de l'auteur du dictionnaire de l'Antiquité ?", "answer": "Les méchants." },
+  { "date": "19/04", "type": "Cours", "question": "Quelle est la différence entre un B et un C ?", "answer": "Elles sont identiques." },
+  { "date": "23/04", "type": "Cours", "question": "Qui était le fondateur de la musique à la Renaissance ?", "answer": "Tout le monde." },
+  { "date": "25/04", "type": "Cours", "question": "Que devez-vous faire pour corriger une erreur ?", "answer": "Vous le soutenez / Vous avez tort." },
+  { "date": "27/04", "type": "Cours", "question": "De quel théorème s'agit-il ?", "answer": "Le théorème des quatre couleurs." },
+  { "date": "30/04", "type": "Cours", "question": "Qu'est-ce qu'un enfant prodige ?", "answer": "Prodige / Enfant / Un enfant prodige." },
+
+  { "date": "07/05", "type": "Cours", "question": "Comment appelle-t-on une femme qui manipule les hommes ?", "answer": "Une femme fatale." },
+  { "date": "10/05", "type": "Cours", "question": "Quelle est la période de l'histoire du Japon avec le plus de femmes écrivains ?", "answer": "L'époque de Heian." },
+
+  { "date": "11/05", "type": "Examen", "question": "Partie 1", "answer": "Minamoto no Yoshitsune / Minamoto no Yoritomo / Yoritomo a gagné / Les faibles et les opprimés." },
+  { "date": "12/05", "type": "Examen", "question": "Partie 2", "answer": "Psyché / Les deux." },
+  { "date": "13/05", "type": "Examen", "question": "Partie 3", "answer": "Le dictionnaire du Diable / Une femme fatale." },
+
+  { "date": "16/05", "type": "Cours", "question": "Quel est l'effet de croire en un traitement ?", "answer": "L'effet placebo." },
+  { "date": "19/05", "type": "Cours", "question": "Quel artiste célèbre de l'époque d'Edo a peint La Grande Vague de Kanagawa ?", "answer": "Katsushika Hokusai." },
+  { "date": "21/05", "type": "Cours", "question": "Quel est le ratio du format A ?", "answer": "1:1,414." },
+  { "date": "23/05", "type": "Cours", "question": "Que signifie la synesthésie ?", "answer": "Ensemble / Sens / Les sens qui s'unissent." },
+  { "date": "26/05", "type": "Cours", "question": "De quel auteur Arthur Conan Doyle s'est-il inspiré ?", "answer": "Arthur Conan Doyle." },
+  { "date": "31/05", "type": "Cours", "question": "Quel personnage historique au nez plat a une statue de bois ?", "answer": "John Silver." },
+
+  { "date": "04/06", "type": "Cours", "question": "Quel phénomène fait qu'on juge quelqu'un sur son apparence ?", "answer": "L'effet de halo." },
+  { "date": "07/06", "type": "Cours", "question": "Comment distinguer un crabe d'un bernard-l'hermite ?", "answer": "Le nombre de pattes." },
+  { "date": "08/06", "type": "Cours", "question": "Où le totalitarisme s'étend-il ?", "answer": "On contrôle l'opinion publique." },
+  { "date": "13/06", "type": "Cours", "question": "De quelle couleur sont les cheveux lavés à l'eau de cuivre ?", "answer": "Vert." },
+  { "date": "15/06", "type": "Cours", "question": "Avec quoi le gouvernement manipule-t-il l'économie ?", "answer": "Des pièces." },
+  { "date": "20/06", "type": "Cours", "question": "Quel appareil moderne est comparable à la lanterne magique ?", "answer": "Smartphone." },
+  { "date": "23/06", "type": "Cours", "question": "Qui était la femme papesse ?", "answer": "Une papesse." },
+  { "date": "27/06", "type": "Cours", "question": "Quel animal dit l'idiome japonais 'il pleut des...' ?", "answer": "Les chiens." },
+  { "date": "29/06", "type": "Cours", "question": "Quel est le métal le plus malléable ?", "answer": "Or." },
+
+  { "date": "01/07", "type": "Cours", "question": "Qu'est-ce qu'on offrait à la place de vraies têtes ?", "answer": "Tête de barbare." },
+  { "date": "04/07", "type": "Cours", "question": "Quels mois ont 31 jours ?", "answer": "Jules et Auguste." },
+  { "date": "07/07", "type": "Cours", "question": "Quel plat traditionnel est servi à Tanabata ?", "answer": "La Voie lactée / Des nouilles somen." },
+  { "date": "09/07", "type": "Cours", "question": "Quelle forme est la somme des angles d'un polygone ?", "answer": "Un triangle." },
+  { "date": "11/07", "type": "Cours", "question": "Qu'est-ce qu'une mémoire à long terme ?", "answer": "Des souvenirs durables / À l'infini / Pour toujours." },
+  { "date": "12/07", "type": "Cours", "question": "Que faisait Goemon Ishikawa ?", "answer": "C'était un voleur." },
+
+  { "date": "13/07", "type": "Examen", "question": "Partie 1", "answer": "64 degrés / Zhuge Liang / Têtes de barbares / Pour les offrir à la place de têtes." },
+  { "date": "14/07", "type": "Examen", "question": "Partie 2", "answer": "Crabe royal (Paralithodes) / Ça a semé la confusion dans l'économie." },
+  { "date": "15/07", "type": "Examen", "question": "Partie 3", "answer": "Des poules et des chiens / Glace pilée." },
+
+  { "date": "03/09", "type": "Cours", "question": "Que signifie la main gauche levée d'un chat porte-bonheur ?", "answer": "Prospérité." },
+  { "date": "06/09", "type": "Cours", "question": "Quel phénomène fait paraître l'aiguille d'une horloge immobile ?", "answer": "Chronostase." },
+  { "date": "14/09", "type": "Cours", "question": "Où l'on échangeait des biens à l'époque ?", "answer": "Prêteurs sur gages." },
+  { "date": "17/09", "type": "Cours", "question": "Quel est l'animal de l'expression anglaise ?", "answer": "Les chats mangent les rats." },
+  { "date": "21/09", "type": "Cours", "question": "D'où vient le mot 'robot' ?", "answer": "Tchécoslovaquie." },
+  { "date": "24/09", "type": "Cours", "question": "Que se passe-t-il quand on regarde le soleil ?", "answer": "Ça devient blanc." },
+  { "date": "28/09", "type": "Cours", "question": "Quel syndrome fait vibrer le téléphone ?", "answer": "Phantom / Vibration / Syndrome." },
+  { "date": "29/09", "type": "Cours", "question": "Que faisaient les cormorans ?", "answer": "Pêcheurs impériaux." },
+
+  { "date": "03/10", "type": "Cours", "question": "Combien de pastèques dans l'univers ?", "answer": "Trois pastèques." },
+  { "date": "06/10", "type": "Cours", "question": "Quel instrument a été inventé pendant la Révolution française ?", "answer": "Guillotine." },
+  { "date": "11/10", "type": "Cours", "question": "Quel nom propose-t-on pour la ligne de base ?", "answer": "A." },
+
+  { "date": "17/10", "type": "Examen", "question": "Partie 1", "answer": "32 faces / C'était un métier héréditaire." },
+  { "date": "18/10", "type": "Examen", "question": "Partie 2", "answer": "Travail forcé / 3 abeilles dans toute l'Europe." },
+  { "date": "19/10", "type": "Examen", "question": "Partie 3", "answer": "15 / Biais de confirmation." },
+
+  { "date": "22/10", "type": "Cours", "question": "Quel est le nombre de cases magiques ?", "answer": "15." },
+  { "date": "24/10", "type": "Cours", "question": "Quelle distorsion cognitive fait réécrire ses souvenirs ?", "answer": "Biais de mémoire." },
+
+  { "date": "02/11", "type": "Cours", "question": "Que signifie le mot ancien pour voleur ?", "answer": "Part de voleur." },
+  { "date": "04/11", "type": "Cours", "question": "Qu'est-ce qu'Arthur cherchait ?", "answer": "Le Graal." },
+  { "date": "08/11", "type": "Cours", "question": "A quel âge commence-t-on à compter ?", "answer": "Zéro." },
+  { "date": "10/11", "type": "Cours", "question": "Que regardent les gens quand ils se parlent ?", "answer": "Leurs yeux." },
+  { "date": "12/11", "type": "Cours", "question": "Pourquoi la voix d'un corbeau est-elle différente ?", "answer": "Parce que c'est une voix synthétique." },
+  { "date": "14/11", "type": "Cours", "question": "Pourquoi le sommet du mont Fuji a-t-il été caché ?", "answer": "À cause de l'altitude." },
+  { "date": "15/11", "type": "Cours", "question": "Comment le public apprenait-il l'exécution d'un criminel ?", "answer": "Sa tête a été exposée." },
+  { "date": "17/11", "type": "Cours", "question": "Où se trouve l'escargot ?", "answer": "Cochléaire." },
+
+  { "date": "20/12", "type": "Examen", "question": "Partie 1", "answer": "D / Plus d'un milliard de yens / Sa tête a été exposée / Performance publique." },
+  { "date": "21/12", "type": "Examen", "question": "Partie 2", "answer": "Cœur / Assister." },
+  { "date": "22/12", "type": "Examen", "question": "Partie 3", "answer": "Japon / Dreadnought." },
+
+  { "date": "11/01", "type": "Cours", "question": "Combien de dieux dans le shintoïsme ?", "answer": "Huit millions / Yaoyorozu." },
+  { "date": "14/01", "type": "Cours", "question": "Où se trouve le lieu inspiré par 'La Montagne Mangeuse' ?", "answer": "Iwate." },
+  { "date": "18/01", "type": "Cours", "question": "Qu'est-ce que Yomiuri signifie ?", "answer": "Impressionnant." },
+  { "date": "21/01", "type": "Cours", "question": "De quel animal s'agit-il ?", "answer": "Un serpent." },
+  { "date": "24/01", "type": "Cours", "question": "Qu'est-ce qui augmente l'ocytocine ?", "answer": "Mon cœur bat la chamade / Un amour de jeunesse / On l'a dans la peau." },
+  { "date": "27/01", "type": "Cours", "question": "Jusqu'où le bouche-à-oreille est-il efficace ?", "answer": "Jusqu'aux amis d'amis." }
+]

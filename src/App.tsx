@@ -6,8 +6,9 @@ import FusionLab from './components/FusionLab'
 import SkillsList from './components/SkillsList'
 import ConfidantGuide from './components/ConfidantGuide'
 import BackupManager from './components/BackupManager'
+import SchoolAnswers from './components/SchoolAnswers'
 import { useCalendar } from './context/CalendarContext'
-import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap } from 'lucide-react'
+import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap } from 'lucide-react'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -17,6 +18,7 @@ function App() {
     { id: 'dashboard', label: 'Accueil', icon: LayoutDashboard },
     { id: 'calendar', label: 'Journal', icon: Book },
     { id: 'stats', label: 'Stats', icon: TrendingUp },
+    { id: 'school', label: 'École', icon: GraduationCap },
     { id: 'fusions', label: 'Fusions', icon: Sparkles },
     { id: 'skills', label: 'Aptitudes', icon: Zap },
     { id: 'confidants', label: 'Confidents', icon: UserCircle },
@@ -24,6 +26,7 @@ function App() {
 
   return (
     <div className="min-h-screen pb-24">
+      {/* Dynamic Header */}
       <header className="relative mb-8 pt-4">
         <div className="p5-skew-box absolute top-0 left-0 w-full h-24 -z-10" />
         <div className="container mx-auto px-4 flex justify-between items-center h-20">
@@ -52,13 +55,15 @@ function App() {
         
         {activeTab === 'stats' && <StatTracker />}
         {activeTab === 'calendar' && <Calendar />}
+        {activeTab === 'school' && <SchoolAnswers />}
         {activeTab === 'fusions' && <FusionLab />}
         {activeTab === 'skills' && <SkillsList />}
         {activeTab === 'confidants' && <ConfidantGuide />}
       </main>
 
-      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-[150] px-2 h-16 flex items-center">
-        <div className="container mx-auto max-w-lg flex justify-between items-stretch h-full gap-1">
+      {/* Bottom Navigation */}
+      <nav className="fixed bottom-0 left-0 w-full bg-p5-black border-t-4 border-p5-red z-[150] px-2 h-16 flex items-center overflow-x-auto custom-scrollbar">
+        <div className="container mx-auto flex justify-between items-stretch h-full gap-2 md:gap-4 px-2 min-w-max">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -66,14 +71,14 @@ function App() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex flex-col items-center justify-center gap-1 flex-1 transition-all duration-300 ${
+                className={`flex flex-col items-center justify-center gap-1 px-4 transition-all duration-300 ${
                   isActive 
                     ? 'bg-p5-red text-white shadow-lg' 
                     : 'text-p5-white/40 hover:text-p5-white hover:bg-p5-gray/20'
                 }`}
               >
                 <Icon size={isActive ? 22 : 20} />
-                <span className={`text-[8px] font-black uppercase tracking-tighter ${isActive ? 'block' : 'hidden'}`}>
+                <span className={`text-[10px] font-black uppercase tracking-tighter ${isActive ? 'block' : 'hidden'}`}>
                   {tab.label}
                 </span>
               </button>
