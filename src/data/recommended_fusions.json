@@ -1,0 +1,1332 @@
+[
+  {
+    "level": 3,
+    "p1": "Arsène",
+    "p2": "Pixie",
+    "result": "Agathion",
+    "notes": "Zio, Eiha"
+  },
+  {
+    "level": 6,
+    "p1": "Bicorn",
+    "p2": "Jack-o'-Lantern",
+    "result": "Saki Mitama",
+    "notes": "Tarunda, Bufu, Goutte d'Énergie"
+  },
+  {
+    "level": 7,
+    "p1": "Agathion",
+    "p2": "Pixie",
+    "result": "Genbu",
+    "notes": "Zio, Eiha, Rakunda, Bufu, Mabufu"
+  },
+  {
+    "level": 8,
+    "p1": "Kelpie",
+    "p2": "Jack-o'-Lantern",
+    "result": "Obariyon",
+    "notes": "Rakunda, Snap, Lucky Punch"
+  },
+  {
+    "level": 9,
+    "p1": "Kelpie",
+    "p2": "Pixie",
+    "result": "Mokoi",
+    "notes": "Zio, Skull Cracker"
+  },
+  {
+    "level": "-",
+    "p1": "Silky",
+    "p2": "Agathion",
+    "result": "Berith",
+    "notes": "Dia, Dormina, Double Fang"
+  },
+  {
+    "level": 10,
+    "p1": "Saki Mitama",
+    "p2": "Arsène",
+    "result": "Slime",
+    "notes": "Eiha, Tarunda"
+  },
+  {
+    "level": 11,
+    "p1": "Succubus",
+    "p2": "Saki Mitama",
+    "result": "Jack Frost",
+    "notes": "Dormina, Goutte d'Énergie, Bufu, Mabufu, Rang de la Force 1"
+  },
+  {
+    "level": "-",
+    "p1": "Angel",
+    "p2": "Obariyon",
+    "result": "Kodama",
+    "notes": "Snap, Makajama, Garu, Rakunda, Psi"
+  },
+  {
+    "level": 15,
+    "p1": "Apsaras",
+    "p2": "Jack Frost",
+    "result": "Makami",
+    "notes": "Bufu, Mabufu, Frei, Mafrei, Double Fangs, Baisudi"
+  },
+  {
+    "level": "-",
+    "p1": "Makami",
+    "p2": "Sacrifice",
+    "result": "Frei",
+    "notes": "Rang de la Force 2 Condition"
+  },
+  {
+    "level": "-",
+    "p1": "Ame-no-Uzume",
+    "p2": "Give Skill Card",
+    "result": "Frei",
+    "notes": "Mazio, Magaru, Frei, Rang de la Force 2"
+  },
+  {
+    "level": "-",
+    "p1": "Arsène",
+    "p2": "Sacrifice",
+    "result": "Arsène's Cane",
+    "notes": "Arme pour Joker"
+  },
+  {
+    "level": "-",
+    "p1": "Jack-o'-Lantern",
+    "p2": "Sacrifice",
+    "result": "Pumpkin Bomb",
+    "notes": "Arme à feu pour Ryuji"
+  },
+  {
+    "level": "-",
+    "p1": "Succubus",
+    "p2": "Sacrifice",
+    "result": "Brain Shot",
+    "notes": "Arme à feu pour Ann"
+  },
+  {
+    "level": "-",
+    "p1": "Silky",
+    "p2": "Sacrifice",
+    "result": "Silk Dress",
+    "notes": "Armor for femmes"
+  },
+  {
+    "level": "-",
+    "p1": "Jack Frost",
+    "p2": "Sacrifice",
+    "result": "Frost Hood",
+    "notes": "Armor for Morgana"
+  },
+  {
+    "level": 17,
+    "p1": "Mokoi",
+    "p2": "Régent",
+    "result": "Matador",
+    "notes": "Skull Cracker, Maragi, Makouha, Maeiha, Psi, Mapsi, Double Shot, Swift Strike"
+  },
+  {
+    "level": "-",
+    "p1": "Matador",
+    "p2": "Sacrifice",
+    "result": "Bloodied Capote",
+    "notes": "Armor for hommes"
+  },
+  {
+    "level": 18,
+    "p1": "Slime",
+    "p2": "Régent",
+    "result": "Shiki-Ouji",
+    "notes": "Tarunda, Mazio, Maragi, Makouha, Double Shot, Mapsi, Psio"
+  },
+  {
+    "level": "-",
+    "p1": "Angel",
+    "p2": "Cait Sith",
+    "result": "Éligor",
+    "notes": "Rang de la Force 3 Condition"
+  },
+  {
+    "level": "-",
+    "p1": "Apsaras",
+    "p2": "Succubus",
+    "result": "Orobas",
+    "notes": "Rang de la Force 3 Condition"
+  },
+  {
+    "level": 19,
+    "p1": "Fusion avancée Berith, Éligor, and Orobas",
+    "p2": "Flauros",
+    "result": "Tarukaja, Rang de la Force 3",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Hua Po",
+    "p2": "Jack-o'-Lantern",
+    "result": "Yaksini",
+    "notes": "Rang de la Force 4 Condition"
+  },
+  {
+    "level": 21,
+    "p1": "Yaksini",
+    "p2": "Makami",
+    "result": "Phénix",
+    "notes": "Contre, Bufu, Mabufu, Freila, Recarm, Boost Nucléaire, Mafreila, Rang de la Force 4"
+  },
+  {
+    "level": "-",
+    "p1": "Phénix",
+    "p2": "Sacrifice",
+    "result": "Heavensent Dress",
+    "notes": "Armor for femmes"
+  },
+  {
+    "level": 23,
+    "p1": "Ame-no-Uzume",
+    "p2": "Inugami",
+    "result": "Nigi Mitama",
+    "notes": "Media, Pulinpa, Baisudi, Diarama, Makouha, Grâce divine, Me Patra"
+  },
+  {
+    "level": "-",
+    "p1": "Kodama",
+    "p2": "Régent",
+    "result": "Fuu-Ki",
+    "notes": "Snap, Rakunda, Maeiha, Evil Touch, Garula, Magarula, Boost Vent"
+  },
+  {
+    "level": "-",
+    "p1": "Berith",
+    "p2": "Hua Po",
+    "result": "Suzaku",
+    "notes": "Rang de la Force 5 Condition"
+  },
+  {
+    "level": 25,
+    "p1": "Phénix",
+    "p2": "Suzaku",
+    "result": "Setanta",
+    "notes": "Rakukaja, Tarunda, Dekaja, Dream Needle, Contre, Charge, Giant Slice, Rising Slash, Rang de la Force 5"
+  },
+  {
+    "level": "-",
+    "p1": "Setanta",
+    "p2": "Koropokguru",
+    "result": "Anzu",
+    "notes": "Charge, Giant Slice (or Rising Slash), Contre, Dekaja, Assault Dive, Rang de la Force 6 Condition"
+  },
+  {
+    "level": 26,
+    "p1": "Jack Frost",
+    "p2": "Kodama",
+    "result": "Isis",
+    "notes": "Dormina, Evil Touch, Boost Effroi, Rakunda, Makouga, Hamaon, Boost Hama"
+  },
+  {
+    "level": 27,
+    "p1": "Orthrus",
+    "p2": "Flauros",
+    "result": "Clotho",
+    "notes": "Agilao, Maragi, Dekaja, Mahama, Makajam, Me Patra, Tetraja, Pluie d'Énergie"
+  },
+  {
+    "level": "-",
+    "p1": "Lamia",
+    "p2": "High Pixie",
+    "result": "Take Minakata",
+    "notes": "Dormina, Rising Slash, Zionga, Mazionga, Boost Élec, Boost Choc"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Leanan Sidhe, High Pixie, and Cait Sith",
+    "p2": "Tam Lin",
+    "result": "Psio, Rakunda, Marin Karin, Brain Shake, Brain Buster, Boost Lavage de cerveau, Heat Up",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Tam Lin",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Fairy Hero Armor",
+    "notes": "Armor for hommes"
+  },
+  {
+    "level": "-",
+    "p1": "Marchand de sable",
+    "p2": "Mandrake",
+    "result": "Sudama",
+    "notes": "Rang de la Force 6 Condition"
+  },
+  {
+    "level": 30,
+    "p1": "Fusion avancée Anzu, Sudama, and Kodama",
+    "p2": "Neko Shogun",
+    "result": "Dekaja, Charge, Assault Dive, Giant Slice, Psio, Defense Master, Rang de la Force 6",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Neko Shogun",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Cat Buster",
+    "notes": "Arme à feu pour Morgana"
+  },
+  {
+    "level": 31,
+    "p1": "Isis",
+    "p2": "Fuu-Ki",
+    "result": "Kurama Tengu",
+    "notes": "Snap, Garula, Dormina, Maeiha, Magarula, Boost Vent"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Amplification Vent",
+    "notes": "Donner à Kurama Tengu"
+  },
+  {
+    "level": 32,
+    "p1": "Clotho",
+    "p2": "Shiki-Ouji",
+    "result": "Decarabia",
+    "notes": "Tarunda, Double Shot, Mapsi, Maragi, Boost feu, Agidyne, Absorb feu, Megidola"
+  },
+  {
+    "level": "-",
+    "p1": "Decarabia",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Agidyne",
+    "notes": "Very early \"dyne\" skill"
+  },
+  {
+    "level": 34,
+    "p1": "Tam Lin",
+    "p2": "Bicorn",
+    "result": "Anubis",
+    "notes": "Brain Shake, Tarunda, Psio, Hamaon, Makouga, Mudoon, Maeiga"
+  },
+  {
+    "level": "-",
+    "p1": "Take Minakata",
+    "p2": "Berith",
+    "result": "Oiseau de tonnerre",
+    "notes": "Defense Master, Rising Slash, Zionga, Mazionga Boost Élec, Boost Choc, Ziodyne"
+  },
+  {
+    "level": "-",
+    "p1": "Oiseau de tonnerre",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Amplification Élec",
+    "notes": "Donner à Oiseau de tonnerre"
+  },
+  {
+    "level": 35,
+    "p1": "Naga",
+    "p2": "Régent",
+    "result": "Arahabaki",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Arahabaki",
+    "p2": "Sacrifice",
+    "result": "Tapsuan",
+    "notes": "Armor for femmes"
+  },
+  {
+    "level": "-",
+    "p1": "Clotho",
+    "p2": "Pierre de Scone",
+    "result": "Lachésis",
+    "notes": "Tetraja, Eiga, Kouga, Psio, Bufula, Mabaisudi, Marakukaja, Mabufula, Boost Glace, Rang de la Force 7"
+  },
+  {
+    "level": 37,
+    "p1": "Kushi Mitama",
+    "p2": "Pixie",
+    "result": "Belphégor",
+    "notes": "Mabufula, Bufudyne, Concentration"
+  },
+  {
+    "level": "-",
+    "p1": "Belphégor",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Bufudyne",
+    "notes": "Very early \"dyne\" skill"
+  },
+  {
+    "level": "-",
+    "p1": "Angel",
+    "p2": "Régent",
+    "result": "Archange",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Archange, Matador, and Decarabia",
+    "p2": "Hell Biker",
+    "result": "Tarunda, Swift Strike, Giant Slice, Tetrakarn, Any, Mudoon, Agilao, Boost feu, Maragion, Mamudoon",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Hell Biker",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Dark Jacket",
+    "notes": "Armor for hommes"
+  },
+  {
+    "level": 38,
+    "p1": "Hell Biker",
+    "p2": "Anzu",
+    "result": "Cavalier blanc",
+    "notes": "Charge, Agilao, Maragion, Agidyne (inherit from Decarabia or skill card), Boost feu, Triple menace, Boost Arme à feu, Maeiga"
+  },
+  {
+    "level": 40,
+    "p1": "Kurama Tengu",
+    "p2": "Setanta",
+    "result": "Daisoujou",
+    "notes": "Garula, Magarula, Boost Vent, Amplification Vent, Makouga, Samsara, Boost Béni, Diarahan (or Kougaon)"
+  },
+  {
+    "level": "-",
+    "p1": "Anubis",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Kougaon",
+    "notes": "Donner à Daisoujou (or keep Diarahan)"
+  },
+  {
+    "level": "-",
+    "p1": "Andras",
+    "p2": "Collier de la Reine",
+    "result": "Lilim",
+    "notes": "Rang de la Force 8 Condition"
+  },
+  {
+    "level": 42,
+    "p1": "Lilim",
+    "p2": "Anzu",
+    "result": "Hécatonchire",
+    "notes": "Masukunda, Bufula, Mabufula, Boost Gel, Rang de la Force 8"
+  },
+  {
+    "level": "-",
+    "p1": "Isis",
+    "p2": "Anubis",
+    "result": "Power",
+    "notes": "Makouga, Tarunda, Rakunda, Condition voir ci-dessous"
+  },
+  {
+    "level": 43,
+    "p1": "Power",
+    "p2": "Belphégor",
+    "result": "Yurlungur",
+    "notes": "Hamaon, Makouga, Boost Béni, Rakunda, Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Yurlungur",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Mirrirmina Ex",
+    "notes": "Arme à feu pour Makoto"
+  },
+  {
+    "level": "-",
+    "p1": "Take Minakata",
+    "p2": "Nigi Mitama",
+    "result": "Kaiwan",
+    "notes": "Media, Diarama, Grâce divine, Psio, Psiodyne, Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Kaiwan",
+    "p2": "Cavalier blanc",
+    "result": "Girimehkala",
+    "notes": "Psio (or Psiodyne), Makajamaon, Boost Oubli, Charge, Marakunda, Renvoi Physique, Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Anubis",
+    "p2": "Sudama",
+    "result": "Thoth",
+    "notes": "Mudoon, Maeiga, Dekunda, Megido, Concentration, Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Girimehkala",
+    "p2": "Thoth",
+    "result": "Cavalier rouge",
+    "notes": "Psio (or Psiodyne), Mudoon (or Renvoi Physique), Marakunda, Concentration, Rising Slash, Mapsio"
+  },
+  {
+    "level": 44,
+    "p1": "Cavalier blanc",
+    "p2": "Lachésis",
+    "result": "Ananta",
+    "notes": "Marakukaja, Agidyne, Maragion, Boost feu, Mafreila, Defense Master, Freidyne, Boost Nucléaire"
+  },
+  {
+    "level": "-",
+    "p1": "Nekomata",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Paw-omber",
+    "notes": "Arme à feu pour Haru"
+  },
+  {
+    "level": "-",
+    "p1": "Queen Mab",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Masquerade Ribbon R",
+    "notes": "Arme pour Ann"
+  },
+  {
+    "level": 49,
+    "p1": "Tam Lin",
+    "p2": "Anzu",
+    "result": "Hariti",
+    "notes": "Rang de la Force 9 Condition"
+  },
+  {
+    "level": "-",
+    "p1": "Marchand de sable",
+    "p2": "Orobas",
+    "result": "Pisaca",
+    "notes": "Rang de la Force 9 Condition"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Pixie, Hariti, and Pisaca",
+    "p2": "Bugs",
+    "result": "Samarecarn, Rang de la Force 9",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Bugs",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Big Bear Gloves",
+    "notes": "Arme pour Makoto"
+  },
+  {
+    "level": 50,
+    "p1": "Valkyrie",
+    "p2": "Ananta",
+    "result": "Dakini",
+    "notes": "Marakukaja, Contre-offensive, Defense Master, Myriade de coups, Charge"
+  },
+  {
+    "level": 51,
+    "p1": "Ganesh",
+    "p2": "Collier de la Reine",
+    "result": "Horus",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Isis, Anubis, Thoth, and Horus",
+    "p2": "Seth",
+    "result": "Frappe létale, Amplification Arme à feu",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Cavalier blanc",
+    "p2": "Sacrifice",
+    "result": "Boost Arme à feu",
+    "notes": "Donner à Seth"
+  },
+  {
+    "level": "-",
+    "p1": "Osé",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Contre féroce",
+    "notes": "Donner à Seth, Rang de la Force 10, can also be earned as a Mementos Request reward"
+  },
+  {
+    "level": 52,
+    "p1": "Hécatonchire",
+    "p2": "Kurama Tengu",
+    "result": "Garuda",
+    "notes": "Boost Vent, Amplification Vent, Bufula, Mabufula, Garudyne, Maragudyne, Pluie d'Amrita, Masukukaja"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Phénix",
+    "result": "Mithra",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Seth",
+    "p2": "Mithra",
+    "result": "Fortuna",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Fortuna",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Super Lucky Robe",
+    "notes": "Meilleure armure pour Futaba"
+  },
+  {
+    "level": "-",
+    "p1": "Licorne",
+    "p2": "Oiseau de tonnerre",
+    "result": "Barong",
+    "notes": "Boost Élec, Boost Choc, Amplification Élec, Ziodyne, Maziodyne"
+  },
+  {
+    "level": 54,
+    "p1": "Lachésis",
+    "p2": "Bugs",
+    "result": "Okuninushi",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Okuninushi",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Official's Robe R",
+    "notes": "Armor for hommes"
+  },
+  {
+    "level": 56,
+    "p1": "Ananta",
+    "p2": "Barong",
+    "result": "Parvati",
+    "notes": "Boost feu, Nul Élec, Any, Null Ice, Psiodyne, Mapsiodyne, Diarahan, Pluie d'Énergie"
+  },
+  {
+    "level": 58,
+    "p1": "Daisoujou",
+    "p2": "Ananta",
+    "result": "Melchisédech",
+    "notes": "Makouga, Kougaon, Boost Béni, Marakukaja, Hamaon, Boost Hama, Mahamaon"
+  },
+  {
+    "level": "-",
+    "p1": "Oiseau de tonnerre",
+    "p2": "Anubis",
+    "result": "Cavalier pâle",
+    "notes": "Mudoon, Esquive Béni, Tarunda, Defense Master, C urse Boost, Megidola, Évitement Béni (swap Esquive Béni)"
+  },
+  {
+    "level": "-",
+    "p1": "Seth",
+    "p2": "Pierre de Scone",
+    "result": "Cavalier noir",
+    "notes": "Mamudoon, Maeigaon"
+  },
+  {
+    "level": 59,
+    "p1": "Fusion avancée Cavalier blanc, Cavalier rouge, Cavalier pâle, and Cavalier noir",
+    "p2": "Trompettiste",
+    "result": "Mudoon, Mamudoon, Eigaon, Maeigaon, Concentration, Aide vitale, Débilitation",
+    "notes": ""
+  },
+  {
+    "level": 60,
+    "p1": "Seth",
+    "p2": "Nornes",
+    "result": "Moloch",
+    "notes": "Megidola, Masukukaja, Any, Agidyne, Maragidyne, Amplification feu, Renvoi feu"
+  },
+  {
+    "level": "-",
+    "p1": "Ananta",
+    "p2": "Régent",
+    "result": "Yatagarasu",
+    "notes": "Freidyne, Mafreila, Boost Nucléaire, Boost feu, Mediarahan"
+  },
+  {
+    "level": "-",
+    "p1": "Yatagarasu",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Black Wing Robe R",
+    "notes": "Armor for hommes et femmes"
+  },
+  {
+    "level": "-",
+    "p1": "Roi Givre",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Roi Givre Cape",
+    "notes": "Armor for hommes et femmes"
+  },
+  {
+    "level": "-",
+    "p1": "Baphomet",
+    "p2": "Parvati",
+    "result": "Lilith",
+    "notes": "Évitement feu, Psiodyne, Mabufudyne, Freidyne, Mafreidyne, Boost Gel, Amplification Nucléaire"
+  },
+  {
+    "level": 63,
+    "p1": "Hanuman",
+    "p2": "Yatagarasu",
+    "result": "Kali",
+    "notes": "Matarunda, Révolution, Mediarahan, Charge, Renvoi Psy, Lame vorpale"
+  },
+  {
+    "level": 64,
+    "p1": "Barong",
+    "p2": "Melchisédech",
+    "result": "Thor",
+    "notes": "Boost Choc, Boost Élec, Matarukaja, Any, Amplification Élec, Maziodyne, Heat Up, Tonnerre sauvage"
+  },
+  {
+    "level": "-",
+    "p1": "Thor",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Imprisoned Mjolnir",
+    "notes": "Meilleure arme pour Ryuji"
+  },
+  {
+    "level": "-",
+    "p1": "Lachésis",
+    "p2": "Ananta",
+    "result": "Yamata-no-Orochi",
+    "notes": "Boost Glace, Freidyne, Boost Nucléaire, Any, Absorption Glace, Mabufudyne, Boost Gel, Amplification Glace, Diamond Dust"
+  },
+  {
+    "level": 66,
+    "p1": "Garuda",
+    "p2": "Yatagarasu",
+    "result": "Quetzalcoatl",
+    "notes": "Boost Vent, Pluie d'Amrita, Dekunda, Agidyne, Garudyne, Magarudyne, Amplification Vent"
+  },
+  {
+    "level": 67,
+    "p1": "Fusion avancée Jack-o'-Lantern, Jack Frost, and Roi Givre",
+    "p2": "Black Frost",
+    "result": "Bufudyne, Rakunda, Raid mégatonne, Mabufudyne, Frappe létale, Amplification Glace, Boost Gel, Diamond Dust",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Black Frost",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Dainakara Whip",
+    "notes": "Meilleure arme pour Ann"
+  },
+  {
+    "level": 68,
+    "p1": "Melchisédech",
+    "p2": "Régent",
+    "result": "Dominion",
+    "notes": "Boost Béni, Boost Hama, Magamaon, Any, Hamaon, Kougaon, Makougaon"
+  },
+  {
+    "level": "-",
+    "p1": "Seth",
+    "p2": "Queen Mab",
+    "result": "Raja Naga",
+    "notes": "Frappe létale, Boost Arme à feu, Amplification Arme à feu"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Naga, Ananta, and Raja Naga",
+    "p2": "Vasuki",
+    "result": "Frappe létale, Boost Arme à feu, Amplification Arme à feu, Any, Trigger Happy, Triple menace, Null Curse",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Vasuki",
+    "p2": "Sacrifice (Alarm)",
+    "result": "K. Gouhou EX",
+    "notes": "Arme à feu pour Yusuke"
+  },
+  {
+    "level": "-",
+    "p1": "Makami",
+    "p2": "Collier de la Reine",
+    "result": "Jikokuten",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Kurama Tengu",
+    "p2": "Matador",
+    "result": "Zouchouten",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Arahabaki",
+    "p2": "Régent",
+    "result": "Koumokuten",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Ananta",
+    "p2": "Black Frost",
+    "result": "Bishamonten",
+    "notes": "Boost Nucléaire, Bufudyne, Mabufudyne, Amplification Glace, Amplification Nucléaire"
+  },
+  {
+    "level": 76,
+    "p1": "Fusion avancée Jikokuten, Zouchouten, Koumokuten, and Bishamonten",
+    "p2": "Asura (Sun)",
+    "result": "Boost Nucléaire, Amplification Nucléaire, Bufudyne, Mabufudyne, Amplification Glace, Éclat atomique, Mafreidyne, Auto-Mataru",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Asura",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Unparalleled Vajra",
+    "notes": "Arme pour Makoto"
+  },
+  {
+    "level": "-",
+    "p1": "Okuninushi",
+    "p2": "Neko Shogun",
+    "result": "Byakko",
+    "notes": "Psi Boost, Any"
+  },
+  {
+    "level": "-",
+    "p1": "Moloch",
+    "p2": "Parvati",
+    "result": "Seiryu",
+    "notes": "Absorption feu, Pluie d'Énergie, Renvoi Nucléaire, Goutte d'Amrita"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée, Seiryu, Byakko, Suzaku, and Genbu",
+    "p2": "Kohryu (Hierophant)",
+    "result": "Boost Psy, Renvoi Nucléaire, Pluie d'Énergie, Absorption feu, Any, Force psychique, Mapsiodyne, Concentration, Amplification Psy, Maître spirituel (swap Pluie d'Énergie)",
+    "notes": ""
+  },
+  {
+    "level": 78,
+    "p1": "Vasuki",
+    "p2": "Dakini",
+    "result": "Raphaël",
+    "notes": "Boost Arme à feu, Amplification Arme à feu, Trigger Happy, Frappe létale, Charge, Danse de l'épée, Heat Riser, Maître d'armes"
+  },
+  {
+    "level": "-",
+    "p1": "Seiryu",
+    "p2": "Régent",
+    "result": "Dionysos",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": 80,
+    "p1": "Dionysos",
+    "p2": "Régent",
+    "result": "Vohu Manah (Councilor)",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Vohu Manah",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Ancient Day",
+    "notes": "Meilleure arme à feu pour Akechi (only after 1/12)"
+  },
+  {
+    "level": 81,
+    "p1": "Messie C'est une Persona DLC gratuite, vous pouvez l'invoquer depuis le Compendium",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Sirius Armor EX",
+    "notes": "Meilleure armure pour femmes"
+  },
+  {
+    "level": "-",
+    "p1": "Byakko",
+    "p2": "Horus",
+    "result": "Rangda",
+    "notes": "Boost Glace, Any"
+  },
+  {
+    "level": 82,
+    "p1": "Barong",
+    "p2": "Rangda",
+    "result": "Shiva",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Shiva",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Megido Blaster",
+    "notes": "Meilleure arme à feu pour Ryuji"
+  },
+  {
+    "level": "-",
+    "p1": "Yamata-no-Orochi",
+    "p2": "Roi Givre",
+    "result": "Scathach",
+    "notes": "Boost Glace, Absorption Glace, Any"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Sacrifice",
+    "result": "Boost Vent",
+    "notes": "Donner à Scathach"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Amplification Vent",
+    "notes": "Donner à Scathach"
+  },
+  {
+    "level": "-",
+    "p1": "Parvati",
+    "p2": "Seiryu",
+    "result": "Mara",
+    "notes": "Null Ice, Absorption feu, Boost feu, Any, Force psychique, Mapsiodyne, Amplification Psy"
+  },
+  {
+    "level": "-",
+    "p1": "Scathach",
+    "p2": "Mara",
+    "result": "Attis (Hanged)",
+    "notes": "Boost Glace, Absorption feu, Absorption Glace, Any, Absorption Maudite"
+  },
+  {
+    "level": "-",
+    "p1": "Attis",
+    "p2": "Rangda",
+    "result": "Alilat (only after 1/12)",
+    "notes": "Boost Glace, Absorption feu, Absorption Maudite, Any, Diamond Dust, Boost Gel, Concentration, Amplification Glace, Âge de glace"
+  },
+  {
+    "level": "-",
+    "p1": "Dakini",
+    "p2": "Koh-i-Noor",
+    "result": "Titania",
+    "notes": "Concentration"
+  },
+  {
+    "level": "-",
+    "p1": "Scathach",
+    "p2": "Titania",
+    "result": "Baal",
+    "notes": "Concentration, Absorption Glace, Panta Rhei, Vide sidéral, Charge, Ayamur"
+  },
+  {
+    "level": "-",
+    "p1": "Baal",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Yagrush EX",
+    "notes": "Meilleure arme à feu pour Haru"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Sacrifice",
+    "result": "Boost Vent",
+    "notes": "Donner à Baal"
+  },
+  {
+    "level": "-",
+    "p1": "Fuu-Ki",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Amplification Vent",
+    "notes": "Donner à Baal"
+  },
+  {
+    "level": 83,
+    "p1": "Kikuri-Hime",
+    "p2": "Koh-i-Noor",
+    "result": "Skadi",
+    "notes": "Lullaby"
+  },
+  {
+    "level": "-",
+    "p1": "Skadi",
+    "p2": "Koh-i-Noor",
+    "result": "Cybèle (Priestess)",
+    "notes": "Lullaby, Dodge Elec, Any, Samarecarm, Mediarahan, Pluie d'Amrita, Absorption Bénie, Salvation"
+  },
+  {
+    "level": "-",
+    "p1": "Cybèle",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Gordios",
+    "notes": "Meilleure arme pour Makoto"
+  },
+  {
+    "level": "-",
+    "p1": "Cavalier pâle",
+    "p2": "Thor",
+    "result": "Nebiros",
+    "notes": "Évitement Béni, Boost Maudit, Megidolaon, Marin Karin, Boost Lavage de cerveau, Brain Jack"
+  },
+  {
+    "level": "-",
+    "p1": "Nebiros",
+    "p2": "Sacrifice",
+    "result": "Brain Jack",
+    "notes": "Donner à Cybèle"
+  },
+  {
+    "level": "-",
+    "p1": "Cybèle",
+    "p2": "Strengthen with Nebiros",
+    "result": "Boost Lavage de cerveau",
+    "notes": "Sauvegarder et recharger jusqu'à l'obtenir"
+  },
+  {
+    "level": "-",
+    "p1": "Cybèle",
+    "p2": "Strengthen with Nebiros",
+    "result": "Marin Karin",
+    "notes": "Sauvegarder et recharger jusqu'à l'obtenir"
+  },
+  {
+    "level": "-",
+    "p1": "Raphaël",
+    "p2": "Éligor",
+    "result": "Vishnou (Fool)",
+    "notes": "Trigger Happy, Amplification Arme à feu, Maître d'armes, Charge, Renvoi feu, Déluge de balles"
+  },
+  {
+    "level": "-",
+    "p1": "Vishnou",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Sudarshana EX",
+    "notes": "Meilleure arme à feu pour Morgana"
+  },
+  {
+    "level": "-",
+    "p1": "Cavalier blanc",
+    "p2": "Sacrifice",
+    "result": "Boost Arme à feu",
+    "notes": "Donner à Vishnou"
+  },
+  {
+    "level": "-",
+    "p1": "Yamata-no-Orochi",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Frappe létale",
+    "notes": "Donner à Vishnou"
+  },
+  {
+    "level": 84,
+    "p1": "Shiva",
+    "p2": "Parvati",
+    "result": "Ardha (Temperance)",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Ardha",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Sahasrara EX",
+    "notes": "Meilleure arme à feu pour Yoshizawa (only after 1/12)"
+  },
+  {
+    "level": "-",
+    "p1": "Barong",
+    "p2": "Régent",
+    "result": "Obéron",
+    "notes": "Maziodyne, Boost Élec, Boost Choc, Any, Ziodyne, Evade Nuke, Amplification Élec"
+  },
+  {
+    "level": "-",
+    "p1": "Obéron",
+    "p2": "Régent",
+    "result": "Odin (Emperor)",
+    "notes": "Boost Choc, Boost Élec, Amplification Élec, Any, Tonnerre sauvage, Thunder Reign, Concentration"
+  },
+  {
+    "level": "-",
+    "p1": "Odin",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Gungnir",
+    "notes": "Meilleure arme à feu pour Ann"
+  },
+  {
+    "level": 85,
+    "p1": "Kali",
+    "p2": "Queen’s Necklace",
+    "result": "Mother Harlot (Empress)",
+    "notes": "Pour Sacrifice uniquement"
+  },
+  {
+    "level": "-",
+    "p1": "Mother Harlot",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Claiomh Solais R",
+    "notes": "Meilleure arme pour Morgana"
+  },
+  {
+    "level": "-",
+    "p1": "Baal",
+    "p2": "Kali",
+    "result": "Uriel",
+    "notes": "Absorption Glace, Renvoi Psy"
+  },
+  {
+    "level": "-",
+    "p1": "Uriel",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Providence",
+    "notes": "Meilleure arme à feu pour Yusuke"
+  },
+  {
+    "level": "-",
+    "p1": "Raja Naga",
+    "p2": "Queen’s Necklace",
+    "result": "Gabriel",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Uriel, Raphaël, and Gabriel",
+    "p2": "Michaël",
+    "result": "Pour Sacrifice uniquement",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Michaël",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Judge End",
+    "notes": "Meilleure arme à feu pour Makoto"
+  },
+  {
+    "level": "-",
+    "p1": "Nebiros",
+    "p2": "Emperor’s Amulet",
+    "result": "Belzébuth (Devil)",
+    "notes": "Évitement Béni, Boost Maudit, Megidolaon, Any, Maeigaon, Mamudoon, Amplification Maudite, Concentration, Décret démoniaque"
+  },
+  {
+    "level": "-",
+    "p1": "Belzébuth",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Fleurs du Mal R",
+    "notes": "Meilleure arme pour Haru"
+  },
+  {
+    "level": "-",
+    "p1": "Belzébuth",
+    "p2": "Pierre de Scone",
+    "result": "Belial",
+    "notes": "Boost Maudit, Maeigaon, Décret démoniaque, Concentration, Eigaon, Amplification Maudite, Mamudoon"
+  },
+  {
+    "level": "-",
+    "p1": "Belial",
+    "p2": "Nebiros",
+    "result": "Alice (Death)",
+    "notes": "Boost Maudit, Amplification Maudite, Décret démoniaque, Any, Mamudoon, Boost Mudo, Maeigaon, Die For Me, Concentration"
+  },
+  {
+    "level": "-",
+    "p1": "Asura",
+    "p2": "Belzébuth",
+    "result": "Fafnir (only after 1/12)",
+    "notes": "Boost Nucléaire, Amplification Nucléaire, Concentration, Éclat atomique, Gigantomachie, Éclat cosmique, Débilitation"
+  },
+  {
+    "level": "-",
+    "p1": "Archange",
+    "p2": "Régent",
+    "result": "Principauté",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Asura",
+    "p2": "Hanuman",
+    "result": "Sandalphon (Moon)",
+    "notes": "Grâce angélique, Renvoi Maudit"
+  },
+  {
+    "level": "-",
+    "p1": "Sandolphon",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Sword of Sinai II",
+    "notes": "Meilleure arme pour Yoshizawa (only after 1/12)"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Michaël, Sandalphon, Dominion, Melchisédech, Power, and Principauté",
+    "p2": "Métatron (Justice)",
+    "result": "Boost Béni, Boost Hama, Renvoi Maudit, Grâce angélique, Any, Mahamaon, Makougaon, Amplification Bénie, Jugement divin",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Métatron",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Nataraja EX",
+    "notes": "Meilleure arme à feu pour Joker"
+  },
+  {
+    "level": "-",
+    "p1": "Leanan Sidhe",
+    "p2": "Flauros",
+    "result": "Sui-Ki",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Shiki-Ouji",
+    "p2": "Régent",
+    "result": "Kin-Ki",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Fuu-Ki, Sui-Ki, and Kin-Ki",
+    "p2": "Ongyo-Ki (Hermit)",
+    "result": "Maître d'armes",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Ongyo-Ki",
+    "p2": "Uriel",
+    "result": "Futsunushi (Magician)",
+    "notes": "Maître d'armes, Absorption Glace, Renvoi Nucléaire, Renvoi Psy"
+  },
+  {
+    "level": "-",
+    "p1": "Futsunushi",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Hinokagutsuchi",
+    "notes": "Meilleure arme pour Akechi (only after 1/12)"
+  },
+  {
+    "level": 89,
+    "p1": "Fusion avancée Futsunushi, Yatagarasu, Okuninushi, Arahabaki, and Shiki-Ouji",
+    "p2": "Yoshitsune",
+    "result": "Renvoi Nucléaire, Renvoi Psy, Absorption Glace, Maître d'armes, Fin limier, Charge, Hassou Tobi",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Yoshitsune",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Usumidori R",
+    "notes": "Meilleure arme pour Yusuke"
+  },
+  {
+    "level": "-",
+    "p1": "Attis",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Absorption Maudite",
+    "notes": "Donner à Yoshitsune"
+  },
+  {
+    "level": "-",
+    "p1": "Lilith",
+    "p2": "Orlov",
+    "result": "Byakhee",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Byakhee",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Renvoi Vent",
+    "notes": "Donner à Yoshitsune"
+  },
+  {
+    "level": "-",
+    "p1": "Okuninushi",
+    "p2": "Raphaël",
+    "result": "Mara (do not register over the other Mara)",
+    "notes": "Boost Psy, Amplification Psy"
+  },
+  {
+    "level": "-",
+    "p1": "Mara (with Boost Psy and Amplification Psy)",
+    "p2": "Hanuman",
+    "result": "Cú Chulainn",
+    "notes": "Boost Psy, Amplification Psy"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Yoshitsune, Cú Chulainn, Thor, Hécatonchire, and Cavalier blanc",
+    "p2": "Chi You (Chariot)",
+    "result": "Boost Psy, Psi Amp, Renvoi Nucléaire, Any, Renvoi Physique, Force psychique, Rafale psychique",
+    "notes": ""
+  },
+  {
+    "level": 90,
+    "p1": "Mara (with Boost feu and Null Ice)",
+    "p2": "Pierre de Scone",
+    "result": "Mada (Tower)",
+    "notes": "Boost feu, Null Ice, Any, Inferno, Boost Brûlure, Amplification feu, Enfer flamboyant, Maître spirituel"
+  },
+  {
+    "level": "-",
+    "p1": "Cybèle",
+    "p2": "Dionysius",
+    "result": "Siegfried",
+    "notes": "Débilitation"
+  },
+  {
+    "level": 93,
+    "p1": "Siegfried",
+    "p2": "Diamant de l'Espoir",
+    "result": "Maria (Faith)",
+    "notes": "Auto-Mataru, Auto-Maraku, Auto-Masuku, Débilitation, Salvation, Holy Benevolence, Grâce angélique, Holy Whisper"
+  },
+  {
+    "level": "-",
+    "p1": "Maria",
+    "p2": "Ongyo-Ki",
+    "result": "Satan (Judgement)",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": "-",
+    "p1": "Satan",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Tantric Oath R",
+    "notes": "Meilleure armure pour hommes"
+  },
+  {
+    "level": "-",
+    "p1": "Yamata-no-Orochi",
+    "p2": "Régent",
+    "result": "Anubis",
+    "notes": "Boost Glace, Amplification Glace, Boost Gel"
+  },
+  {
+    "level": "-",
+    "p1": "Fusion avancée Satan, Métatron, Michaël, Trompettiste, Ananta, Anubis",
+    "p2": "Lucifer",
+    "result": "Boost Glace, Amplification Glace, Boost Gel, Diamond Dust, Âge de glace, Étoile du matin, Maître spirituel, Repel Bless",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Shiva",
+    "p2": "Nebiros",
+    "result": "Ishtar (Lovers)",
+    "notes": "Condition voir ci-dessous"
+  },
+  {
+    "level": 95,
+    "p1": "Fusion avancée Lucifer, Satan, Michaël, Ishtar, Anzu, and Arsène",
+    "p2": "Satanael",
+    "result": "Pour Sacrifice uniquement",
+    "notes": ""
+  },
+  {
+    "level": "-",
+    "p1": "Satanael",
+    "p2": "Sacrifice (Alarm)",
+    "result": "Paradise Lost R",
+    "notes": "Meilleure arme pour Joker"
+  }
+]
