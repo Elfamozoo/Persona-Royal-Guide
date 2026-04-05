@@ -1,13 +1,13 @@
 [
   {
     "name": "Ryuji Sakamoto",
-    "arcana": "Le Chariot",
+    "arcana": "Le Bateleur",
     "location": "Lycée Shujin (2F) / Arcade de Shibuya",
     "ranks": [
       { "rank": 2, "choices": ["Je compte sur toi (+3)", "Tu veux t'entraîner ? (+2)"], "phone": "Tu as l'air motivé (+2)" },
       { "rank": 3, "choices": ["Laisse-les dire (+2)", "Ne nous battons pas (+2)"], "phone": "Je n'ai rien fait (+2)" },
       { "rank": 4, "choices": ["C'est toi qui l'as fait, Ryuji (+3)", "Tu as raison (+3)"], "phone": "Tant que tu as compris (+2)" },
-      { "rank": 5, "choices": ["C'est des protéines ? (+3)", "Tu veux revenir ? (+2)"], "phone": "C'est l'esprit (+2)" },
+      { "rank": 5, "choices": ["C'est des protéines ? (+3)", "Tu veux revenir ? (+2)"], "phone": "C'est lesprit (+2)" },
       { "rank": 6, "choices": ["On devrait aller manger (+3)", "C'est n'importe quoi (+3)", "Absolument (+3)"], "phone": "C'est vrai (+2)" },
       { "rank": 7, "choices": ["Parle-lui (+3)", "On va les arrêter (+3)"], "phone": "Je n'ai fait que regarder (+2)" },
       { "rank": 8, "choices": ["T'es super cool, Ryuji (+3)", "Tout s'est arrangé (+3)", "Je me suis contenté d'observer (+3)"], "phone": "On n'est pas encore quittes (+2)" },
@@ -17,7 +17,7 @@
   },
   {
     "name": "Ann Takamaki",
-    "arcana": "L'Amoureux",
+    "arcana": "Les Amoureux",
     "location": "Shibuya (Passage souterrain)",
     "ranks": [
       { "rank": 2, "choices": ["C'est possible (+3)", "Tu n'es pas seule (+3)", "Tu te sens mieux ? (+3)"], "phone": "On l'aidera (+2)" },
@@ -38,7 +38,7 @@
     "ranks": [
       { "rank": 2, "choices": ["Tu es drôlement au courant (+2)", "C'était dangereux (+3)"], "phone": "Je ferais n'importe quoi (+2)" },
       { "rank": 3, "choices": ["Tu devrais essayer (+2)", "Tu peux changer (+3)"], "phone": "C'était le but (+2)" },
-      { "rank": 4, "choices": ["C'est sans doute ça (+3)", "C'est l'essentiel (+2)"] },
+      { "rank": 4, "choices": ["C'est sans doute ça (+3)", "C'est l'essentiel (+2)" ] },
       { "rank": 5, "choices": ["C'est suspect (+3)", "Il a l'air louche (+3)"], "phone": "C'est une bonne idée (+2)" },
       { "rank": 6, "choices": ["C'est de l'amour ? (+3)", "On dirait bien (+2)" ] },
       { "rank": 7, "choices": ["C'est une fille géniale (+3)", "C'est l'enthousiasme (+2)" ] },
@@ -49,17 +49,17 @@
   },
   {
     "name": "Takuto Maruki",
-    "arcana": "L'Édile",
+    "arcana": "Le Consultant",
     "location": "Infirmerie de Shujin",
     "ranks": [
       { "rank": 2, "choices": ["C'était délicieux (+3)", "C'était nécessaire (+2)"] },
       { "rank": 3, "choices": ["Ça a l'air sympa (+3)", "C'est mon travail (+2)"] },
       { "rank": 4, "choices": ["Je sais, non ? (+3)", "C'est ce que je voulais (+2)"] },
       { "rank": 5, "choices": ["C'est vrai (+3)", "C'est pas grave (+2)"] },
-      { "rank": 6, "choices": ["Ça a l'air intéressant (+2)"], "phone": "C'est gentil (+2)" },
-      { "rank": 7, "choices": ["C'est fascinant (+3)"], "phone": "C'est l'essentiel (+2)" },
+      { "rank": 6, "choices": ["Ça a l'air intéressant (+2)", "C'est gentil (+2)"] },
+      { "rank": 7, "choices": ["C'est fascinant (+3)", "C'est l'essentiel (+2)"] },
       { "rank": 8, "choices": ["C'est ce que je voulais (+3)", "Il est génial (+2)"], "phone": "Il est génial (+2)" },
-      { "rank": 9, "choices": ["C'est triste (+3)"], "phone": "C'est une bonne idée (+2)" },
+      { "rank": 9, "choices": ["C'est triste (+3)"], "phone": "C'une bonne idée (+2)" },
       { "rank": 10, "choices": ["Automatique le 18/11"] }
     ]
   },
@@ -71,7 +71,12 @@
       { "rank": 2, "choices": ["On a un accord (+2)", "C'est une bonne idée (+3)"], "phone": "C'est l'essentiel (+2)" },
       { "rank": 3, "choices": ["C'est vrai (+3)", "Je suis content (+3)"], "phone": "C'est l'esprit (+2)" },
       { "rank": 4, "choices": ["C'est impressionnant (+2)", "Je suis d'accord (+3)"], "phone": "C'est le talent (+2)" },
-      { "rank": 5, "choices": ["C'est une surprise (+2)", "C'est magnifique (+3)"], "phone": "C'est l'essentiel (+2)" }
+      { "rank": 5, "choices": ["C'est une surprise (+2)", "C'est magnifique (+3)"], "phone": "C'est l'essentiel (+2)" },
+      { "rank": 6, "choices": ["Tu dois y faire face (+3)", "C'est un nouveau départ (+3)"], "phone": "Content que tu sois de retour (+2)" },
+      { "rank": 7, "choices": ["Ça va ? (+3)", "Bien sûr (+3)"], "phone": "J'aime les défis (+2)" },
+      { "rank": 8, "choices": ["Aller vers Sumire (+3)", "Je suis là pour toi (+3)", "T'as fait des progrès (+3)"], "phone": "En ligne (+2)" },
+      { "rank": 9, "choices": ["Oui, bien sûr (+3)", "Moi aussi, je t'aime (Romance)", "Restons amis (Amitié)"], "phone": "Faut que tu t'habitues (+2)" },
+      { "rank": 10, "choices": ["Tu as bien travaillé (+3)", "Je serai toujours là (+3)"] }
     ]
   },
   {
