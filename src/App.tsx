@@ -9,15 +9,15 @@ import BackupManager from './components/BackupManager'
 import SchoolAnswers from './components/SchoolAnswers'
 import { useCalendar } from './context/CalendarContext'
 import masterSchedule from './data/master_schedule.json'
-import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap, Sun, Moon, CloudRain, Snowflake, ThermometerSun, Wind } from 'lucide-react'
+import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap, Sun, Moon, CloudRain, Snowflake, ThermometerSun, Wind, CalendarDays } from 'lucide-react'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
-  const { currentDate } = useCalendar()
+  const { currentDate, jumpToDate } = useCalendar()
 
   const tabs = [
     { id: 'dashboard', label: 'Accueil', icon: LayoutDashboard },
-    { id: 'calendar', label: 'Journal', icon: Book },
+    { id: 'calendar', label: 'Guide 100%', icon: Book },
     { id: 'stats', label: 'Stats', icon: TrendingUp },
     { id: 'school', label: 'École', icon: GraduationCap },
     { id: 'fusions', label: 'Fusions', icon: Sparkles },
@@ -27,6 +27,7 @@ function App() {
 
   const dateKey = currentDate.toISOString().split('T')[0];
   const dayData = (masterSchedule as any)[dateKey];
+  const allDates = Object.keys(masterSchedule).sort();
 
   const getWeatherIcon = (weather: string) => {
     switch (weather) {
@@ -63,33 +64,52 @@ function App() {
       <main className="container mx-auto px-4 max-w-6xl">
         {activeTab === 'dashboard' && (
           <div className="space-y-12">
+            
+            {/* GAME DATE SELECTOR */}
+            <div className="flex flex-col md:flex-row items-center gap-4 bg-p5-gray/40 p-4 border-2 border-p5-red transform skew-x-[-2deg]">
+              <div className="flex items-center gap-3 text-p5-red font-black italic uppercase shrink-0">
+                <CalendarDays size={24} /> Sélectionner un jour du jeu :
+              </div>
+              <select 
+                value={dateKey}
+                onChange={(e) => jumpToDate(new Date(e.target.value))}
+                className="flex-1 bg-p5-black text-white p-2 font-bold uppercase border-b-2 border-p5-red outline-none"
+              >
+                {allDates.map(d => (
+                  <option key={d} value={d}>
+                    {new Date(d).toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'long' }).toUpperCase()}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {/* 100% Guide Snapshot */}
             {dayData && (
               <div className="bg-p5-red p-1 transform -rotate-1 shadow-2xl relative overflow-hidden">
                 <div className="bg-p5-black p-6 border-2 border-p5-white flex flex-col lg:flex-row gap-8 items-center relative z-10">
                   <div className="text-center lg:text-left flex items-center gap-6">
                     <div className="hidden md:block">
-                      {getWeatherIcon(dayData.weather)}
+                      {getWeatherIcon(dayData.weather || 'Beau temps')}
                     </div>
                     <div>
                       <h2 className="text-p5-red font-black italic uppercase text-sm mb-1 tracking-widest flex items-center gap-2 justify-center lg:justify-start">
-                        Guide 100% - {dayData.weather}
+                        Planning 100% - {dayData.weather || 'Beau temps'}
                       </h2>
                       <p className="text-3xl font-black italic uppercase leading-none">
-                        {currentDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
+                        {new Date(dateKey).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
                       </p>
                     </div>
                   </div>
                   
                   <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-red group hover:bg-p5-red/10 transition-colors">
+                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-red">
                       <div className="flex items-center gap-2 text-p5-red mb-1">
                         <Sun size={16} />
                         <span className="text-[10px] font-black uppercase italic">Journée</span>
                       </div>
                       <span className="font-bold text-xs uppercase leading-tight">{dayData.daytime}</span>
                     </div>
-                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-white group hover:bg-white/5 transition-colors">
+                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-white">
                       <div className="flex items-center gap-2 text-p5-white mb-1">
                         <Moon size={16} />
                         <span className="text-[10px] font-black uppercase italic">Soirée</span>
@@ -97,10 +117,6 @@ function App() {
                       <span className="font-bold text-xs uppercase leading-tight">{dayData.evening}</span>
                     </div>
                   </div>
-                </div>
-                {/* Decorative Background Icon */}
-                <div className="absolute -right-10 -bottom-10 opacity-5 transform rotate-12">
-                  <Sparkles size={200} />
                 </div>
               </div>
             )}
@@ -111,12 +127,6 @@ function App() {
               </div>
               <div className="lg:w-80 space-y-8">
                 <BackupManager />
-                <div className="p5-card border-p5-red/30 bg-p5-red/5">
-                  <h3 className="font-black italic uppercase text-sm text-p5-red mb-4 underline">Conseil du jour</h3>
-                  <p className="text-xs font-bold italic leading-relaxed opacity-70">
-                    {currentDate.getDay() === 0 ? "C'est dimanche ! Pensez à l'Aojiru dans le passage souterrain de Shibuya pour un boost de stats gratuit." : "Consultez toujours votre inventaire de Personas avant un rendez-vous Confident."}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
