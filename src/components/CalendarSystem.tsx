@@ -38,7 +38,7 @@ const CalendarSystem: React.FC = () => {
                   ? 'bg-white text-p5-black border-p5-red scale-[1.02] shadow-[0_0_20px_rgba(208,0,0,0.3)] z-10' 
                   : 'bg-p5-gray/20 text-p5-white border-transparent hover:bg-p5-red/10 hover:border-white/20'
               }`}
-              style={{ skewX: isToday ? '-2deg' : '0deg' }}
+              style={{ transform: isToday ? 'skewX(-2deg)' : 'none' }}
             >
               <div className="flex flex-col md:flex-row md:items-center gap-4">
                 <div className="md:w-32 shrink-0">
