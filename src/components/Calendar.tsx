@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCalendar } from '../context/CalendarContext';
-import { History, ArrowUpRight } from 'lucide-react';
+import { History, ArrowUpRight, Music } from 'lucide-react';
 
 const Calendar: React.FC = () => {
   const { history } = useCalendar();
@@ -37,8 +37,11 @@ const Calendar: React.FC = () => {
               </div>
               
               <div className="flex items-center gap-2 text-p5-red font-black italic">
-                <ArrowUpRight size={16} />
-                +{log.statPoints} <span className="uppercase text-xs">{log.statName}</span>
+                <span className="uppercase text-xs mr-2">{log.statName}</span>
+                <div className="flex">
+                  {[...Array(log.statPoints)].map((_, i) => <Music key={i} size={12} fill="currentColor" />)}
+                </div>
+                <span className="text-sm">+{log.statPoints}</span>
               </div>
             </div>
           ))}

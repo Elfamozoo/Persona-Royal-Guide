@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useCalendar } from '../context/CalendarContext';
 import { useStats } from '../context/StatsContext';
 import data from '../data/full_activities.json';
-import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain, Tv } from 'lucide-react';
+import { Calendar as CalendarIcon, BookOpen, Utensils, Briefcase, CloudRain, Tv, Music } from 'lucide-react';
 
 const ActivityLogger: React.FC = () => {
   const { currentDate, logActivity, nextDay, jumpToDate } = useCalendar();
@@ -15,7 +15,6 @@ const ActivityLogger: React.FC = () => {
     let points = activity.points;
     const currentDayName = currentDate.toLocaleDateString('fr-FR', { weekday: 'long' });
     
-    // Bonus logic
     if (isRainy && activity.bonus?.type === 'rain') {
       points += activity.bonus.points;
     }
@@ -24,7 +23,10 @@ const ActivityLogger: React.FC = () => {
     }
 
     if (activity.stat !== 'special' && activity.stat !== 'variable') {
-      addPoints(activity.stat as any, points);
+      // Map display name to internal key if necessary
+      const statKey = activity.stat.toLowerCase()
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // "Maîtrise" -> "maitrise"
+      addPoints(statKey as any, points * 2); // Roughly mapping notes to internal points
     }
 
     logActivity({
@@ -79,42 +81,49 @@ const ActivityLogger: React.FC = () => {
         {(filter === 'all' || filter === 'activities') && data.activites.map(act => (
           <button key={act.id} onClick={() => handleLog(act)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <div>
-                <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{act.name}</h4>
-                <p className="text-xs text-p5-white/60 uppercase">{act.location} • {act.stat}</p>
-              </div>
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{act.name}</h4>
               <Briefcase size={20} className="text-p5-red" />
             </div>
-            <div className="mt-2 text-p5-red font-bold">+{act.points} pts</div>
+            <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
+              <span className="font-black italic uppercase text-xs tracking-tighter">{act.stat}</span>
+              <div className="flex text-p5-red">
+                {[...Array(act.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+              </div>
+              <span className="text-xs font-bold text-white/60 ml-auto">+{act.points}</span>
+            </div>
           </button>
         ))}
 
         {(filter === 'all' || filter === 'books') && data.livres.map(book => (
           <button key={book.id} onClick={() => handleLog(book)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <div>
-                <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{book.name}</h4>
-                <p className="text-xs text-p5-white/60 uppercase">{book.location} • {book.stat}</p>
-              </div>
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{book.name}</h4>
               <BookOpen size={20} className="text-p5-red" />
             </div>
-            <div className="mt-2 flex justify-between items-end">
-              <span className="text-p5-red font-bold">+{book.points} pts</span>
-              <span className="text-[10px] bg-p5-white text-p5-black px-1 font-black">{book.chapters} CHAP</span>
+            <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
+              <span className="font-black italic uppercase text-xs tracking-tighter">{book.stat}</span>
+              <div className="flex text-p5-red">
+                {[...Array(book.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+              </div>
+              <span className="text-xs font-bold text-white/60 ml-auto">+{book.points}</span>
             </div>
+            <div className="mt-2 text-[10px] text-white/30 uppercase font-black tracking-widest">{book.location} • {book.chapters} chapitres</div>
           </button>
         ))}
 
         {(filter === 'all' || filter === 'dvds') && data.dvds.map(dvd => (
           <button key={dvd.id} onClick={() => handleLog(dvd)} className="p5-card text-left group">
             <div className="flex justify-between items-start">
-              <div>
-                <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{dvd.name}</h4>
-                <p className="text-xs text-p5-white/60 uppercase">{dvd.location} • {dvd.stat}</p>
-              </div>
+              <h4 className="font-bold text-lg group-hover:text-p5-red transition-colors">{dvd.name}</h4>
               <Tv size={20} className="text-p5-red" />
             </div>
-            <div className="mt-2 text-p5-red font-bold">+{dvd.points} pts</div>
+            <div className="mt-4 flex items-center gap-2 bg-p5-black/40 p-2 border-l-2 border-p5-red">
+              <span className="font-black italic uppercase text-xs tracking-tighter">{dvd.stat}</span>
+              <div className="flex text-p5-red">
+                {[...Array(dvd.points)].map((_, i) => <Music key={i} size={14} fill="currentColor" />)}
+              </div>
+              <span className="text-xs font-bold text-white/60 ml-auto">+{dvd.points}</span>
+            </div>
           </button>
         ))}
       </div>
