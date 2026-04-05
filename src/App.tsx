@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import StatTracker from './components/StatTracker'
 import ActivityLogger from './components/ActivityLogger'
-import Calendar from './components/Calendar'
+import CalendarSystem from './components/CalendarSystem'
 import FusionLab from './components/FusionLab'
 import SkillsList from './components/SkillsList'
 import ConfidantGuide from './components/ConfidantGuide'
 import BackupManager from './components/BackupManager'
 import SchoolAnswers from './components/SchoolAnswers'
 import { useCalendar } from './context/CalendarContext'
-import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap } from 'lucide-react'
+import masterSchedule from './data/master_schedule.json'
+import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap, Sun, Moon } from 'lucide-react'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -23,6 +24,9 @@ function App() {
     { id: 'skills', label: 'Aptitudes', icon: Zap },
     { id: 'confidants', label: 'Confidents', icon: UserCircle },
   ]
+
+  const dateKey = currentDate.toISOString().split('T')[0];
+  const dayData = (masterSchedule as any)[dateKey];
 
   return (
     <div className="min-h-screen pb-24">
@@ -42,11 +46,36 @@ function App() {
       <main className="container mx-auto px-4 max-w-6xl">
         {activeTab === 'dashboard' && (
           <div className="space-y-12">
-            <div className="flex flex-col md:flex-row gap-8">
+            {/* 100% Guide Snapshot */}
+            {dayData && (
+              <div className="bg-p5-red p-1 transform -rotate-1 shadow-2xl">
+                <div className="bg-p5-black p-6 border-2 border-p5-white flex flex-col md:flex-row gap-8 items-center">
+                  <div className="text-center md:text-left">
+                    <h2 className="text-p5-red font-black italic uppercase text-sm mb-1 tracking-widest">Guide 100% - Aujourd'hui</h2>
+                    <p className="text-3xl font-black italic uppercase leading-none">
+                      {currentDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
+                    </p>
+                  </div>
+                  
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                    <div className="flex items-center gap-3 bg-p5-gray/20 p-3 border-l-4 border-p5-red">
+                      <Sun size={20} className="text-p5-red" />
+                      <span className="font-bold text-xs uppercase">{dayData.daytime}</span>
+                    </div>
+                    <div className="flex items-center gap-3 bg-p5-gray/20 p-3 border-l-4 border-p5-white">
+                      <Moon size={20} className="text-p5-white" />
+                      <span className="font-bold text-xs uppercase">{dayData.evening}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div className="flex flex-col lg:flex-row gap-8">
               <div className="flex-1">
                 <ActivityLogger />
               </div>
-              <div className="md:w-80">
+              <div className="lg:w-80 space-y-8">
                 <BackupManager />
               </div>
             </div>
@@ -54,7 +83,7 @@ function App() {
         )}
         
         {activeTab === 'stats' && <StatTracker />}
-        {activeTab === 'calendar' && <Calendar />}
+        {activeTab === 'calendar' && <CalendarSystem />}
         {activeTab === 'school' && <SchoolAnswers />}
         {activeTab === 'fusions' && <FusionLab />}
         {activeTab === 'skills' && <SkillsList />}
