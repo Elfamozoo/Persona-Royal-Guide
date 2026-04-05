@@ -9,7 +9,7 @@ import BackupManager from './components/BackupManager'
 import SchoolAnswers from './components/SchoolAnswers'
 import { useCalendar } from './context/CalendarContext'
 import masterSchedule from './data/master_schedule.json'
-import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap, Sun, Moon } from 'lucide-react'
+import { LayoutDashboard, Book, TrendingUp, Sparkles, UserCircle, Zap, GraduationCap, Sun, Moon, CloudRain, Snowflake, ThermometerSun, Wind } from 'lucide-react'
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -27,6 +27,23 @@ function App() {
 
   const dateKey = currentDate.toISOString().split('T')[0];
   const dayData = (masterSchedule as any)[dateKey];
+
+  const getWeatherIcon = (weather: string) => {
+    switch (weather) {
+      case 'Pluie':
+      case 'Pluie torrentielle':
+        return <CloudRain className="text-blue-400" size={20} />;
+      case 'Neige':
+        return <Snowflake className="text-white" size={20} />;
+      case 'Canicule':
+        return <ThermometerSun className="text-orange-500" size={20} />;
+      case 'Alerte Pollen':
+      case 'Grippe':
+        return <Wind className="text-green-400" size={20} />;
+      default:
+        return <Sun className="text-yellow-400" size={20} />;
+    }
+  };
 
   return (
     <div className="min-h-screen pb-24">
@@ -48,25 +65,42 @@ function App() {
           <div className="space-y-12">
             {/* 100% Guide Snapshot */}
             {dayData && (
-              <div className="bg-p5-red p-1 transform -rotate-1 shadow-2xl">
-                <div className="bg-p5-black p-6 border-2 border-p5-white flex flex-col md:flex-row gap-8 items-center">
-                  <div className="text-center md:text-left">
-                    <h2 className="text-p5-red font-black italic uppercase text-sm mb-1 tracking-widest">Guide 100% - Aujourd'hui</h2>
-                    <p className="text-3xl font-black italic uppercase leading-none">
-                      {currentDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
-                    </p>
+              <div className="bg-p5-red p-1 transform -rotate-1 shadow-2xl relative overflow-hidden">
+                <div className="bg-p5-black p-6 border-2 border-p5-white flex flex-col lg:flex-row gap-8 items-center relative z-10">
+                  <div className="text-center lg:text-left flex items-center gap-6">
+                    <div className="hidden md:block">
+                      {getWeatherIcon(dayData.weather)}
+                    </div>
+                    <div>
+                      <h2 className="text-p5-red font-black italic uppercase text-sm mb-1 tracking-widest flex items-center gap-2 justify-center lg:justify-start">
+                        Guide 100% - {dayData.weather}
+                      </h2>
+                      <p className="text-3xl font-black italic uppercase leading-none">
+                        {currentDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
+                      </p>
+                    </div>
                   </div>
                   
                   <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-                    <div className="flex items-center gap-3 bg-p5-gray/20 p-3 border-l-4 border-p5-red">
-                      <Sun size={20} className="text-p5-red" />
-                      <span className="font-bold text-xs uppercase">{dayData.daytime}</span>
+                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-red group hover:bg-p5-red/10 transition-colors">
+                      <div className="flex items-center gap-2 text-p5-red mb-1">
+                        <Sun size={16} />
+                        <span className="text-[10px] font-black uppercase italic">Journée</span>
+                      </div>
+                      <span className="font-bold text-xs uppercase leading-tight">{dayData.daytime}</span>
                     </div>
-                    <div className="flex items-center gap-3 bg-p5-gray/20 p-3 border-l-4 border-p5-white">
-                      <Moon size={20} className="text-p5-white" />
-                      <span className="font-bold text-xs uppercase">{dayData.evening}</span>
+                    <div className="flex flex-col gap-1 bg-p5-gray/20 p-3 border-l-4 border-p5-white group hover:bg-white/5 transition-colors">
+                      <div className="flex items-center gap-2 text-p5-white mb-1">
+                        <Moon size={16} />
+                        <span className="text-[10px] font-black uppercase italic">Soirée</span>
+                      </div>
+                      <span className="font-bold text-xs uppercase leading-tight">{dayData.evening}</span>
                     </div>
                   </div>
+                </div>
+                {/* Decorative Background Icon */}
+                <div className="absolute -right-10 -bottom-10 opacity-5 transform rotate-12">
+                  <Sparkles size={200} />
                 </div>
               </div>
             )}
@@ -77,6 +111,12 @@ function App() {
               </div>
               <div className="lg:w-80 space-y-8">
                 <BackupManager />
+                <div className="p5-card border-p5-red/30 bg-p5-red/5">
+                  <h3 className="font-black italic uppercase text-sm text-p5-red mb-4 underline">Conseil du jour</h3>
+                  <p className="text-xs font-bold italic leading-relaxed opacity-70">
+                    {currentDate.getDay() === 0 ? "C'est dimanche ! Pensez à l'Aojiru dans le passage souterrain de Shibuya pour un boost de stats gratuit." : "Consultez toujours votre inventaire de Personas avant un rendez-vous Confident."}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
