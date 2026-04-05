@@ -22,7 +22,7 @@ interface CalendarContextType {
 const CalendarContext = createContext<CalendarContextType | undefined>(undefined);
 
 // Game starts on April 9th
-const INITIAL_DATE = new Date(2026, 3, 9); // Using 2026 as current year
+const INITIAL_DATE = new Date('2026-04-09');
 
 export const CalendarProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentDate, setCurrentDate] = useState<Date>(() => {
@@ -65,6 +65,8 @@ export const CalendarProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const resetCalendar = () => {
+    localStorage.removeItem('p5r_date');
+    localStorage.removeItem('p5r_history');
     setCurrentDate(INITIAL_DATE);
     setHistory([]);
   };

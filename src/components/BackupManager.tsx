@@ -48,11 +48,11 @@ const BackupManager: React.FC = () => {
 
   const handleReset = () => {
     if (window.confirm('Êtes-vous sûr de vouloir tout effacer ? Cette action est irréversible.')) {
+      localStorage.clear();
       resetStats();
       resetCalendar();
-      localStorage.clear();
       alert('Toutes les données ont été effacées.');
-      window.location.reload();
+      window.location.href = '/'; // Redirect to home and reload
     }
   };
 
